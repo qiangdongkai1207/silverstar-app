@@ -1,0 +1,181 @@
+.img-a {
+	width: 100%;
+	position: absolute;
+}
+.img-b {
+	width: 100%;
+	height: 45px;
+	bottom: 0;
+	position: absolute;
+}
+.login-bg {
+	height: 100vh;
+	// background: linear-gradient(-30deg, #FF8DDB, #BB73E0);
+	background: linear-gradient(30deg, #efbdd3, #89ccff);
+	// background: linear-gradient(-30deg, #CCFBFF, #EF96C5);
+	// background: linear-gradient(-30deg, #AEBAF8, #C973FF);
+}
+
+.t-login {
+	width: 580rpx;
+	padding: 55rpx;
+	margin: 0 auto;
+	font-size: 28rpx;
+	background-color: #ffffff;
+	border-radius: 20rpx;
+	position: relative;
+	margin-top: 100rpx;
+	box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15);
+	z-index: 9;
+}
+
+.t-login button {
+	font-size: 28rpx;
+	background: linear-gradient(to right, #4E77FF, #4E77FF);
+	// background: linear-gradient(-30deg, #afd9ff, #ef7092);
+	color: #fff;
+	height: 90rpx;
+	line-height: 90rpx;
+	border-radius: 50rpx;
+}
+
+.t-login input {
+	padding: 0 20rpx 0 20rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	margin-bottom: 50rpx;
+	background: #f6f6f6;
+	border: 1px solid #f6f6f6;
+	font-size: 28rpx;
+	border-radius: 50rpx;
+}
+
+.t-login .t-a {
+	position: relative;
+}
+
+.t-login .t-a image {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	left: 40rpx;
+	top: 28rpx;
+	padding-right: 20rpx;
+}
+
+.t-login .t-b {
+	text-align: left;
+	font-size: 46rpx;
+	// color: #ff939b;
+	color: #4E77FF;
+	font-weight: bold;
+	margin: 0 0 50rpx 20rpx;
+}
+
+.t-login .t-d {
+	text-align: center;
+	color: #999;
+	margin: 80rpx 0;
+}
+
+.t-login .t-c {
+	text-align: right;
+	color: #c0c0c0;
+	margin: -20rpx 30rpx 40rpx 0;
+}
+
+.t-login .t-f {
+	text-align: center;
+	margin: 200rpx 0 0 0;
+	color: #666;
+}
+
+.t-login .t-f text {
+	margin-left: 20rpx;
+	color: #aaaaaa;
+	font-size: 27rpx;
+}
+
+.t-login .uni-input-placeholder {
+	color: #aeaeae;
+}
+
+.cl {
+	zoom: 1;
+}
+
+.cl:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content: '\20';
+}
+.cardBox {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: 5px;
+	background: #ffffff;
+	opacity: 0.9;
+	-webkit-border-radius: 20rpx;
+	border-radius: 0 0 20rpx 20rpx;
+	height: 70rpx;
+	width: 600rpx;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	line-height: 70rpx;
+	color: #aaa;
+	font-size: 28rpx;
+}
+.cardBox .txt {
+	// color: #fe519f;
+	color: #4E77FF;
+}
+
+// 自定义
+.logo,.logo-weixin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.img {
+		width: 20vw;
+		height: 20vw;
+		border-radius: 100%;
+		image {
+			width: 100%;
+			border-radius: 100%;
+		}
+	}
+}
+.logo{
+	width: 100%;
+	height: 45vw;
+	position: relative;
+	top: 120rpx;
+}
+.logo-weixin .img {
+	border: 1px solid #000;
+}
+.t-b-weixin{
+	color: #999;
+	font-size: 12px;
+	margin-top: 50rpx !important;
+}
+
+.t-login.weixin{
+	margin-top: 0 !important;
+	top:270rpx !important;
+	padding-bottom: 80rpx!important;
+}
+.t-login.weixin button{
+	margin-top: 50rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

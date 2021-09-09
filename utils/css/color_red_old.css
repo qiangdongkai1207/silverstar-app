@@ -1,0 +1,297 @@
+/* 默认颜色 */
+/* 玫瑰色 */
+.rose-bg-gradual {
+	background: -webkit-linear-gradient(30deg, #FD9383 0%, #FA328B 100%) !important;
+	background: -o-linear-gradient(30deg, #FD9383 0%, #FA328B 100%) !important;
+	background: -moz-linear-gradient(30deg, #FD9383 0%, #FA328B 100%) !important;
+	background: -mos-linear-gradient(30deg, #FD9383 0%, #FA328B 100%) !important;
+	background: linear-gradient(30deg, #FD9383 0%, #FA328B 100%) !important;
+}
+
+.rose-bg-gradual-tran {
+	/* 横向渐变色 */
+	background: -webkit-linear-gradient(30deg, #FD9383 0%, #FC6787 100%) !important;
+	background: -o-linear-gradient(30deg, #FD9383 0%, #FC6787 100%) !important;
+	background: -moz-linear-gradient(30deg, #FD9383 0%, #FC6787 100%) !important;
+	background: -mos-linear-gradient(30deg, #FD9383 0%, #FC6787 100%) !important;
+	background: linear-gradient(30deg, #FD9383 0%, #FC6787 100%) !important;
+}
+
+.rose-bg-white-btn {
+	background: #FFFFFF !important;
+	color: #FA328B !important;
+}
+
+.rose-bg-gradual-btn,
+.rose-bg-gradual-btn button,
+.rose-btn button,
+.rose-btn,
+.rose-btn button {
+	background: linear-gradient(to right, #FD9383 0%, #FA328B 100%) !important;
+	color: #FFFFFF !important;
+}
+
+.rose-bg {
+	background: #FC6787 !important;
+}
+
+.rose-color,
+.rose-color .tui-tabs-active,
+.rose-color .tui-tabs-slider {
+	color: #FC6787 !important;
+}
+
+.rose-color .tui-tabs-slider {
+	background: #FC6787 !important;
+}
+
+.rose-bg-gradual-btn .tui-pro-pricebox,
+.rose-bg-gradual-btn .tui-original-price,
+.rose-bg-gradual-btn .tui-line-text {
+	color: #FFFFFF !important;
+}
+
+.rose-bg-border .tui-btn-class {
+	color: #FC6787 !important;
+	background: #FFFFFF !important;
+}
+
+.rose-bg-border .tui-btn-class:after {
+	border: 3px solid #FC6787 !important;
+}
+
+/* 红色 */
+.red-bg-gradual {
+	/* 渐变背景颜色 */
+	background: -webkit-linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+	background: -o-linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+	background: -moz-linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+	background: -mos-linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+	background: linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+}
+
+.red-bg-gradual-tran {
+	/* 横向渐变色 */
+	background: -webkit-linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+	background: -o-linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+	background: -moz-linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+	background: -mos-linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+	background: linear-gradient(30deg, #E41F19 0%, #F65109 100%) !important;
+}
+
+.red-bg-white-btn {
+	background: #FFFFFF !important;
+	color: #f00 !important;
+}
+
+.red-color,
+.red-color .tui-tabs-active,
+.red-color .tui-tabs-slider {
+	color: #f00 !important;
+}
+
+.red-color .tui-tabs-slider {
+	background: #f00 !important;
+}
+
+.red-bg-gradual-btn,
+.red-bg-gradual-btn button,
+.red-btn,
+.red-btn button {
+	background: linear-gradient(to right, #E41F19 0%, #F65109 100%) !important;
+	color: #FFFFFF !important;
+}
+
+.red-bg {
+	background: #E41F19 !important;
+}
+
+.red-btn2 {
+	color: #EB0909 !important;
+	background: none;
+}
+
+.red-bg-border .tui-btn-class {
+	color: #FF0000 !important;
+	background: #FFFFFF !important;
+}
+
+.red-bg-border .tui-btn-class:after {
+	border: 3px solid #FF0000 !important;
+}
+
+/* 商品 */
+/* .red-bg-shopinfo {
+	background: linear-gradient(to right, #E41F19 0%, #F65109 100%);
+} */
+
+.red-bg-gradual-btn .tui-pro-pricebox,
+.red-bg-gradual-btn .tui-original-price,
+.red-bg-gradual-btn .tui-line-text {
+	color: #FFFFFF !important;
+}
+
+/* 绿色 */
+.green-bg-gradual {
+	background: -webkit-linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+	background: -o-linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+	background: -moz-linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+	background: -mos-linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+	background: linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+}
+
+.green-bg-gradual-tran {
+	background: -webkit-linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+	background: -o-linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+	background: -moz-linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+	background: -mos-linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+	background: linear-gradient(30deg, #18807A 0%, #1FA679 100%) !important;
+}
+
+.green-bg-white-btn {
+	background: #FFFFFF !important;
+	color: #1FA679 !important;
+}
+
+.green-bg-gradual-btn,
+.green-bg-gradual-btn button,
+.green-btn,
+.green-btn button {
+	background: linear-gradient(to right, #18807A 0%, #1FA679 100%) !important;
+	color: #FFFFFF !important;
+}
+
+.green-bg {
+	background: #18807A !important;
+}
+
+.green-color,
+.green-color .tui-tabs-active,
+.green-color .tui-tabs-slider {
+	color: #18807A !important;
+}
+
+.green-color .tui-tabs-slider {
+	background: #18807A !important;
+}
+
+.green-bg-gradual-btn .tui-pro-pricebox,
+.green-bg-gradual-btn .tui-original-price,
+.green-bg-gradual-btn .tui-line-text {
+	color: #FFFFFF !important;
+}
+
+.green-bg-border .tui-btn-class {
+	color: #18807A !important;
+	background: #FFFFFF !important;
+}
+
+.green-bg-border .tui-btn-class:after {
+	border: 3px solid #18807A !important;
+}
+
+/* 其他颜色 */
+/* 蓝色 */
+.bg-blue-block {
+	background: -webkit-linear-gradient(to bottom, #EDF3FF 0%, #EDF3FF 100%) !important;
+	background: -o-linear-gradient(to bottom, #EDF3FF 0%, #EDF3FF 100%) !important;
+	background: -moz-linear-gradient(to bottom, #EDF3FF 0%, #EDF3FF 100%) !important;
+	background: -mos-linear-gradient(to bottom, #EDF3FF 0%, #EDF3FF 100%) !important;
+	background: linear-gradient(to bottom, #EDF3FF 0%, #EDF3FF 100%) !important;
+}
+
+.bg-blue-text1 {
+	color: #1B3373;
+}
+
+.bg-blue-text2 {
+	color: #8694B4;
+}
+
+/* 紫色 */
+.bg-violet-block {
+	background: -webkit-linear-gradient(to bottom, #F1EDFE 0%, #F1EDFE 100%) !important;
+	background: -o-linear-gradient(to bottom, #F1EDFE 0%, #F1EDFE 100%) !important;
+	background: -moz-linear-gradient(to bottom, #F1EDFE 0%, #F1EDFE 100%) !important;
+	background: -mos-linear-gradient(to bottom, #F1EDFE 0%, #F1EDFE 100%) !important;
+	background: linear-gradient(to bottom, #F1EDFE 0%, #F1EDFE 100%) !important;
+}
+
+.bg-violet-text1 {
+	color: #301383;
+}
+
+.bg-violet-text2 {
+	color: #9A8FB8;
+}
+
+/* 肉色 */
+.bg-flesh-block {
+	background: -webkit-linear-gradient(to bottom, #FDF3E9 0%, #FDF3E9 100%) !important;
+	background: -o-linear-gradient(to bottom, #FDF3E9 0%, #FDF3E9 100%) !important;
+	background: -moz-linear-gradient(to bottom, #FDF3E9 0%, #FDF3E9 100%) !important;
+	background: -mos-linear-gradient(to bottom, #FDF3E9 0%, #FDF3E9 100%) !important;
+	background: linear-gradient(to bottom, #FDF3E9 0%, #FDF3E9 100%) !important;
+}
+
+.bg-flesh-text1 {
+	color: #74381B;
+}
+
+.bg-flesh-text2 {
+	color: #D49374;
+}
+
+/* 粉色 */
+.bg-pink-block {
+	background: -webkit-linear-gradient(to bottom, #FDEFEB 0%, #FDEFEB 100%) !important;
+	background: -o-linear-gradient(to bottom, #FDEFEB 0%, #FDEFEB 100%) !important;
+	background: -moz-linear-gradient(to bottom, #FDEFEB 0%, #FDEFEB 100%) !important;
+	background: -mos-linear-gradient(to bottom, #FDEFEB 0%, #FDEFEB 100%) !important;
+	background: linear-gradient(to bottom, #FDEFEB 0%, #FDEFEB 100%) !important;
+}
+
+.bg-pink-text1 {
+	color: #6B2710;
+}
+
+.bg-pink-text2 {
+	color: #B78D87;
+}
+
+/* 其他颜色 */
+/* 渐变色 */
+.violet-green {
+	color: #fff !important;
+	background: linear-gradient(30deg, #fc00ff 0%, #00dbde 100%) !important;
+}
+
+.red-experience {
+	color: #fff !important;
+	background: linear-gradient(30deg, #ff512f 0%, #dd2476 100%) !important;
+}
+
+.green-blue,
+.green-experience {
+	color: #fff !important;
+	background: linear-gradient(30deg, #c2e59c 0%, #64b3f4 100%) !important;
+}
+
+.rose-red,
+.rose-experience {
+	color: #fff !important;
+	background: linear-gradient(30deg, #b24592 0%, #f15f79 100%) !important;
+}
+
+/* 凸起 */
+.box-shadow {
+	box-shadow: 0px 3px 3px #E1E1E1;
+}
+
+.box-shadow .tui-btn-class {
+	box-shadow: 0px 3px 3px #E1E1E1;
+}
+
+.btn-hover {
+	opacity: 0.6;
+}

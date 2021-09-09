@@ -1,0 +1,10 @@
+/* 默认颜色 */
+.red-bg-gradual {
+	/* 渐变背景颜色 */
+	background: #FFFFFF;
+}
+
+.red-bg-white-btn {
+	background: #f00 !important;
+	color: #FFFFFF !important;
+}
