@@ -28,24 +28,4 @@
 
 <style>
 	/*每个页面公共css */
-	* {
-		margin: 0;
-	}
-
-	view {
-		display: block;
-
-	}
-
-	image {
-		width: 320px;
-		height: 240px;
-		display: inline-block;
-		overflow: hidden;
-	}
-
-	.view {
-		padding-left: 30rpx;
-		padding-right: 30rpx;
-	}
 </style>

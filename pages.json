@@ -14,12 +14,19 @@
 					"popGesture": "none" //禁止手势返回
 				}
 			}
+		},
+		// 选择校区
+		{
+			"path": "pages/system/index-category/index-category",
+			"style": {
+				"navigationBarTitleText": "选择校区"
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
 	}
 }

@@ -53,9 +53,6 @@
 }
 .t-login button {
   font-size: 28rpx;
-  background: -webkit-linear-gradient(left, #4E77FF, #4E77FF);
-  background: linear-gradient(to right, #4E77FF, #4E77FF);
-  color: #fff;
   height: 90rpx;
   line-height: 90rpx;
   border-radius: 50rpx;
@@ -171,15 +168,13 @@
   position: relative;
   top: 120rpx;
 }
-.logo-weixin .img {
-  border: 1px solid #000;
-}
 .t-b-weixin {
   color: #999;
   font-size: 12px;
   margin-top: 50rpx !important;
 }
 .t-login.weixin {
+  font-weight: bold;
   margin-top: 0 !important;
   top: 270rpx !important;
   padding-bottom: 80rpx !important;

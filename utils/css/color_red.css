@@ -1,10 +1,7 @@
 /* 默认颜色 */
-.red-bg-gradual {
-	/* 渐变背景颜色 */
-	background: #FFFFFF;
-}
-
-.red-bg-white-btn {
-	background: #f00 !important;
-	color: #FFFFFF !important;
+.blue-btn button,
+.blue-bg {
+	background: linear-gradient(to right, #4E77FF, #4E77FF);
+	/* background: linear-gradient(-30deg, #afd9ff, #ef7092); */
+	color: #fff;
 }

@@ -2,6 +2,39 @@
 	margin: 0;
 }
 
+page {
+	padding-bottom: 100rpx;
+	color: #333;
+	box-sizing: border-box;
+	width:100%;
+}
+
 .cell-hover {
 	background: #f7f7f9 !important;
+}
+
+.card-hover {
+	background: #f3f3f3 !important;
+}
+
+
+view {
+	display: block;
+
+}
+
+image {
+	width: 320px;
+	height: 240px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.view {
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+}
+
+page {
+	background: #F4F7FF;
 }

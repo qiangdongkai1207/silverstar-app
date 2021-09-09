@@ -11,6 +11,7 @@ import {
 Vue.prototype.appid = ID
 // Vue.prototype.registerTeacher = registerTeacher
 import "./utils/css/color_red.css";
+import "./utils/css/shadow.css";
 
 /* 4.配置VUEX */
 import store from './store/store.js'
@@ -25,9 +26,11 @@ ajax1.setConfig((config) => { /* 设置全局配置 */
 });
 uni.setStorageSync("serverurl", SERVERURL);
 
-/* 6.配置 thorUI */
+/* 6.配置 公共js */
 import tui from './utils/js/tui.js'
+import openPages from './utils/js/openPages.js'
 Vue.prototype.tui = tui
+Vue.prototype.openPages = openPages
 Vue.prototype.$eventHub = Vue.prototype.$eventHub || new Vue()
 
 /* 1.导入vue */
