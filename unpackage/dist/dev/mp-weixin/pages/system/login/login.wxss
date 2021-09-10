@@ -36,8 +36,6 @@
 }
 .login-bg {
   height: 100vh;
-  background: -webkit-linear-gradient(60deg, #efbdd3, #89ccff);
-  background: linear-gradient(30deg, #efbdd3, #89ccff);
 }
 .t-login {
   width: 580rpx;
@@ -154,8 +152,8 @@
           align-items: center;
 }
 .logo .img, .logo-weixin .img {
-  width: 20vw;
-  height: 20vw;
+  width: 200rpx;
+  height: 200rpx;
   border-radius: 100%;
 }
 .logo .img image, .logo-weixin .img image {
@@ -170,7 +168,7 @@
 }
 .t-b-weixin {
   color: #999;
-  font-size: 12px;
+  font-size: 28rpx;
   margin-top: 50rpx !important;
 }
 .t-login.weixin {

@@ -1,0 +1,182 @@
+
+.user-top-box {
+	width: 100%;
+	height: 380rpx;
+	position: relative;
+	overflow: hidden;
+}
+.user-top-box-bg {
+	width: 119%;
+	height: 100%;
+	border-bottom-right-radius: 300rpx;
+	border-bottom-left-radius: 267rpx;
+	position: absolute;
+	top: -4%;
+	left: -8%;
+}
+.tui-avatar {
+	-webkit-flex-shrink: 0;
+	        flex-shrink: 0;
+	width: 128rpx;
+	height: 128rpx;
+	display: block;
+	border-radius: 100rpx;
+}
+.tui-img-vip {
+	width: 56rpx;
+	height: 24rpx;
+	margin-left: 18rpx;
+}
+.tui-header-center {
+	position: absolute;
+	width: 100%;
+	height: 128rpx;
+	left: 0;
+	top: 30rpx;
+	padding: 0 50rpx;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	/* align-items: center; */
+}
+.tui-info {
+	width: 60%;
+	padding-left: 30rpx;
+}
+.tui-nickname {
+	font-size: 42rpx;
+	font-weight: 500;
+	color: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.tui-explain {
+	width: 80%;
+	font-size: 26rpx;
+	font-weight: 400;
+	color: #fff;
+	opacity: 0.75;
+	padding-top: 8rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* 中间位置 */
+.middle-container {
+	height: 138rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background-color: #ffffff;
+	margin-top: -130rpx !important;
+	position: relative;
+}
+.public-card {
+	padding: 0;
+	z-index: 2;
+	border-radius: 10rpx;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	margin: 30rpx 30rpx 26rpx 30rpx;
+}
+.middle-item {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.ticket-img {
+	width: 80rpx;
+	height: 80rpx;
+	margin-left: 65rpx;
+}
+.middle-tag {
+	font-size: 28rpx;
+	color: #333333;
+	line-height: 28rpx;
+	font-weight: bold;
+	padding-left: 22rpx;
+}
+.tui-order-list {
+	width: 100%;
+	height: 134rpx;
+	padding: 0;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	/* -webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between; */
+}
+.tui-flex-wrap {
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	height: auto;
+}
+.tui-tool-item {
+	width: 25%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	padding: 30rpx 40rpx;
+}
+.tui-icon-box {
+	position: relative;
+}
+.tui-icon-box .tui-icon:before,
+.tui-icon-box .iconfont:before {
+	font-size: 62rpx;
+}
+.tui-icon-box.explain .tui-icon:before {
+	font-size: 56rpx;
+}
+.tui-icon-box.tuichu .iconfont:before {
+	font-size: 48rpx;
+}
+.tui-order-text,
+.tui-tool-text {
+	font-size: 26rpx;
+	font-weight: 400;
+	color: #666;
+}
+

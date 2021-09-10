@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "t-linkage": "/components/views/t-linkage/t-linkage",
+    "scroll-message": "/components/views/scroll-message/scroll-message"
+  }
+}

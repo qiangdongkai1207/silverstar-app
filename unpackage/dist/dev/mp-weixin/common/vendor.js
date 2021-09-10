@@ -10442,10 +10442,28 @@ if (hadRuntime) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-var tui = {};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tui = {
+  getUserInfo: function getUserInfo() {
+    return uni.getStorageSync("userInfo") || null;
+  },
+  setUserInfo: function setUserInfo(json) {
+    uni.setStorageSync('userInfo', json);
+  },
+  removeUserInfo: function removeUserInfo(json) {
+    uni.removeStorageSync('userInfo');
+  },
+
+  alert: function alert(text, duration, success) {
+    uni.showToast({
+      title: text,
+      icon: success ? 'success' : 'none',
+      duration: duration || 2000 });
+
+  } };var _default =
+
 
 tui;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 18 */
@@ -10464,10 +10482,28 @@ tui;exports.default = _default;
                                                                                                       * @createTime: 2021-9-9 10:45:29 ?F10: AM?
                                                                                                       */
 var openPages = {
+  // 跳转登录
+  openLogin: function openLogin() {
+    uni.navigateTo({
+      url: '/pages/system/login/login' });
+
+  },
   // 跳转首页选择页面
   openIndexCategory: function openIndexCategory() {
     uni.navigateTo({
       url: '/pages/system/index-category/index-category' });
+
+  },
+  // 跳转首页选择页面
+  openIndex: function openIndex() {
+    uni.switchTab({
+      url: '/pages/system/index/index' });
+
+  },
+  // 跳转首页选择页面
+  openUser: function openUser() {
+    uni.switchTab({
+      url: '/pages/user/user' });
 
   } };var _default =
 

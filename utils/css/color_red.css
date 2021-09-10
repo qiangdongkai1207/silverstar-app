@@ -5,3 +5,20 @@
 	/* background: linear-gradient(-30deg, #afd9ff, #ef7092); */
 	color: #fff;
 }
+
+.blue-color,
+.blue-color .tui-icon:before,
+.blue-color .iconfont,
+.blue-color i,
+.blue-color .iconfont:before {
+	/* background: linear-gradient(-30deg, #afd9ff, #ef7092); */
+	color: #4E77FF !important;
+}
+
+.blue-radiation-bg {
+	background: linear-gradient(to bottom, #4E77FF 30%, #74B1FF);
+}
+
+.radiation-bg {
+	background: linear-gradient(30deg, #efbdd3, #89ccff);
+}

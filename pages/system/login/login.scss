@@ -11,7 +11,6 @@
 .login-bg {
 	height: 100vh;
 	// background: linear-gradient(-30deg, #FF8DDB, #BB73E0);
-	background: linear-gradient(30deg, #efbdd3, #89ccff);
 	// background: linear-gradient(-30deg, #CCFBFF, #EF96C5);
 	// background: linear-gradient(-30deg, #AEBAF8, #C973FF);
 }
@@ -144,8 +143,8 @@
 	justify-content: center;
 	align-items: center;
 	.img {
-		width: 20vw;
-		height: 20vw;
+		width: 200rpx;
+		height: 200rpx;
 		border-radius: 100%;
 		image {
 			width: 100%;
@@ -164,7 +163,7 @@
 }
 .t-b-weixin{
 	color: #999;
-	font-size: 12px;
+	font-size: 28rpx;
 	margin-top: 50rpx !important;
 }
 

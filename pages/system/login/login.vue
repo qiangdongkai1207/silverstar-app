@@ -1,6 +1,6 @@
 <!-- 蓝色简洁登录页面 -->
 <template>
-	<view class="login-bg">
+	<view class="login-bg radiation-bg ">
 		<image class="img-a" src="@/static/image/login/bg1.png"></image>
 		<!-- #ifndef MP-WEIXIN -->
 		<view class="logo">
@@ -42,8 +42,8 @@
 			<view class="t-b-weixin">一一 第 三 方 登 录 一一</view>
 			<form class="cl">
 				<button @tap="loginWeixin()">
-					<i class="iconfont icon-weixin"></i>
-					<view style="margin-left: 30rpx;">一 键 微 信 登 录</view>
+					<i class="iconfont icon-weixin" style=" font-size: 36rpx;"></i>
+					<view style="margin-left: 30rpx; font-size: 36rpx;">一 键 微 信 登 录</view>
 				</button>
 			</form>
 		</view>
@@ -107,7 +107,12 @@
 			/**
 			 * 微信登录
 			 */
-			loginWeixin(){
+			loginWeixin() {
+				this.tui.setUserInfo({
+					id: 123,
+					name: "张三",
+					phone: '18712352145',
+				});
 				this.openPages.openIndexCategory();
 			},
 		}

@@ -6,6 +6,20 @@
   "description": "yx小程序",
   "glyphs": [
     {
+      "icon_id": "16399015",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e85f",
+      "unicode_decimal": 59487
+    },
+    {
+      "icon_id": "16250647",
+      "name": "优惠券",
+      "font_class": "youhuiquan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
       "icon_id": "1206404",
       "name": "微信",
       "font_class": "weixin",

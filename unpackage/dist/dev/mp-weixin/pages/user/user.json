@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "tui-icon": "/components/icon/icon",
+    "tui-actionsheet": "/components/actionsheet/actionsheet"
+  }
+}
