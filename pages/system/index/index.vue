@@ -28,7 +28,7 @@
 								<view class="class-name">{{ item }}</view>
 								<view class="class-box-block">
 									<view class="public-card" hover-class="card-hover" @tap="clickCard()">
-										<view class="card-tip-top blue-bg">
+										<view class="card-tip-top theme-bg">
 											火热报名
 										</view>
 										<view class="card-img">
@@ -163,12 +163,16 @@
 					this.currentTab = e.index;
 					this.checkCor(true);
 				}
-			}
+			},
+			// 点击进入商品详情（报名）
+			clickCard() {
+				this.openPages.openShopInfo();
+			},
 		}
 	}
 </script>
 
-<style>
+<style lang="scss">
 	/* 左侧导航布局 start*/
 
 	.tui-searchbox {
@@ -205,7 +209,7 @@
 		height: 60rpx;
 		background: #f1f1f1;
 		border-radius: 30rpx;
-		font-size: 26rpx;
+		font-size: $font-base;
 		color: #999;
 		display: flex;
 		align-items: center;
@@ -233,7 +237,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 26rpx;
+		font-size: $font-base;
 		color: #444;
 		font-weight: 400;
 		margin-top: 20rpx;
@@ -242,7 +246,7 @@
 	.active {
 		position: relative;
 		color: #FFFFFF;
-		font-size: 30rpx;
+		font-size: $font-lg;
 		font-weight: 600;
 		background: #4E77FF;
 	}
@@ -284,7 +288,7 @@
 	}
 
 	.class-name {
-		font-size: 32rpx;
+		font-size: $font-bg;
 		font-weight: bold;
 	}
 
@@ -309,7 +313,7 @@
 	}
 
 	.g-title {
-		font-size: 22rpx;
+		font-size: $font-sm;
 	}
 
 	/* 卡片自定义 */
@@ -327,26 +331,26 @@
 	}
 
 	.tab-bar-item text {
-		font-size: 26rpx;
+		font-size: $font-sm;
 	}
 
 	.card-tip-bottom {
 		color: #f00 !important;
-		font-size: 24rpx;
+		font-size: $font-sm;
 		bottom: 15rpx;
 	}
 
 	.card-text view {
-		font-size: 24rpx;
+		font-size: $font-sm;
 	}
 
 	.card-text label {
-		font-size: 26rpx;
+		font-size: $font-base;
 		color: #b3b3b3;
 	}
 
 	.card-tip-top {
-		font-size: 24rpx;
+		font-size: $font-sm;
 		top: 25rpx;
 		right: 15rpx;
 	}

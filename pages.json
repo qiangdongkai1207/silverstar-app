@@ -1,5 +1,12 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// 商品详情
+		{
+			"path": "pages/shop/shopInfo",
+			"style": {
+				"navigationBarTitleText": "报名"
+			}
+		},
 		// 首頁
 		{
 			"path": "pages/system/index/index",
@@ -9,6 +16,7 @@
 				"navigationBarTitleText": "首页"
 			}
 		},
+
 		// 我的
 		{
 			"path": "pages/user/user",
@@ -40,6 +48,7 @@
 				"navigationBarTitleText": "选择校区"
 			}
 		}
+
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

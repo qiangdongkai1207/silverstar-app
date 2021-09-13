@@ -9,7 +9,7 @@
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni, createApp) {__webpack_require__(/*! uni-pages */ 4);
 __webpack_require__(/*! ./utils/icon/iconfont.css */ 5);
-__webpack_require__(/*! ./utils/css/public.css */ 6);
+__webpack_require__(/*! ./utils/css/public.scss */ 6);
 
 
 var _system = __webpack_require__(/*! ./system.js */ 7);
@@ -19,7 +19,7 @@ var _system = __webpack_require__(/*! ./system.js */ 7);
 
 
 
-__webpack_require__(/*! ./utils/css/color_red.css */ 8);
+__webpack_require__(/*! ./utils/css/theme.scss */ 8);
 __webpack_require__(/*! ./utils/css/shadow.css */ 9);
 
 

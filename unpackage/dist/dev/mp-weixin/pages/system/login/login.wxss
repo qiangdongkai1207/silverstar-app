@@ -24,6 +24,13 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字尺寸 */
+/* 通用的主题颜色 */
+/* 优惠券组件的颜色 */
+/*文字颜色 优惠券组件的颜色*/
+/* 边框颜色 优惠券组件的颜色 */
+/* 背景颜色 优惠券组件的颜色 */
+/* 行为相关颜色 优惠券组件的颜色 */
 .img-a {
   width: 100%;
   position: absolute;
@@ -38,7 +45,7 @@
   height: 100vh;
 }
 .t-login {
-  width: 580rpx;
+  width: 660rpx;
   padding: 55rpx;
   margin: 0 auto;
   font-size: 28rpx;
@@ -174,7 +181,7 @@
 .t-login.weixin {
   font-weight: bold;
   margin-top: 0 !important;
-  top: 270rpx !important;
+  top: 330rpx !important;
   padding-bottom: 80rpx !important;
 }
 .t-login.weixin button {

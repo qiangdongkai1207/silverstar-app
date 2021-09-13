@@ -30,6 +30,16 @@ const openPages = {
 			url: '/pages/user/user'
 		});
 	},
+	// 跳转商品详情
+	openShopInfo(param) {
+		var url = '/pages/shop/shopInfo';
+		if (!!param) {
+			url = url + "?" + param;
+		}
+		uni.navigateTo({
+			url: url
+		});
+	},
 }
 
 export default openPages

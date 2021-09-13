@@ -1,0 +1,42 @@
+/* 默认颜色 */
+.theme-btn button,
+.theme-bg,
+.theme-bg-shadow{
+	background: linear-gradient(to right, $font-color-blue, $font-color-blue);
+	/* background: linear-gradient(-30deg, #afd9ff, #ef7092); */
+	color: #fff;
+}
+.theme-bg-shadow{
+	box-shadow: 0px 1px 5px $font-color-blue;
+}
+
+.theme-color,
+.theme-color .tui-icon:before,
+.theme-color .iconfont,
+.theme-color i,
+.theme-color .iconfont:before {
+	/* background: linear-gradient(-30deg, #afd9ff, #ef7092); */
+	color: $font-color-blue !important;
+}
+
+.theme-radiation-solid-bg {
+	background: linear-gradient(to bottom, $font-color-blue 30%, #74B1FF);
+}
+
+.theme-radiation-bg {
+	background: linear-gradient(30deg, #efbdd3, #89ccff);
+}
+
+.theme-important-bg{
+	color: #FFFFFF;
+	background: $font-color-red;
+}
+.theme-important-bg-shadow{
+	box-shadow: 0px 1px 5px  $font-color-red;
+}
+
+.theme-important-color{
+	color: $font-color-red;
+}
+
+

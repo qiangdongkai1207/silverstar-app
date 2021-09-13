@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "报名",
+  "usingComponents": {
+    "coupon": "/components/coolc-coupon/coolc-coupon"
+  }
+}

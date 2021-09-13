@@ -2,7 +2,7 @@
 	<view class="container">
 		<view></view>
 		<view class="user-top-box">
-			<view class="user-top-box-bg blue-radiation-bg ">
+			<view class="user-top-box-bg theme-radiation-solid-bg ">
 
 			</view>
 			<view class="tui-header-center">
@@ -52,7 +52,7 @@
 		</view>
 		<view class=" public-card">
 			<view class="tui-order-list tui-flex-wrap">
-				<view class=" tui-tool-item blue-color" style="padding-top: 34rpx;" hover-class="card-hover"
+				<view class=" tui-tool-item theme-color" style="padding-top: 34rpx;" hover-class="card-hover"
 					@tap="openActionSheet_logout(2)">
 					<view class="tui-icon-box tuichu">
 						<i class="iconfont icon-tuichu"></i>
@@ -60,14 +60,14 @@
 					<view class="tui-tool-text">退出</view>
 				</view>
 				<view class=" tui-tool-item" hover-class="card-hover">
-					<view class="tui-icon-box blue-color">
+					<view class="tui-icon-box theme-color">
 						<tui-icon name="setup-fill" class=""></tui-icon>
 					</view>
 					<view class="tui-tool-text">设置</view>
 				</view>
 
 				<view class=" tui-tool-item" hover-class="card-hover" style="padding-top: 28rpx;">
-					<view class="tui-icon-box blue-color explain">
+					<view class="tui-icon-box theme-color explain">
 						<tui-icon name="explain-fill" class=""></tui-icon>
 					</view>
 					<view class="tui-tool-text">帮助</view>
@@ -168,7 +168,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.user-top-box {
 		width: 100%;
 		height: 380rpx;
@@ -218,7 +218,7 @@
 	}
 
 	.tui-nickname {
-		font-size: 42rpx;
+		font-size: $font-max-bg;
 		font-weight: 500;
 		color: #fff;
 		display: -webkit-box;
@@ -229,7 +229,7 @@
 
 	.tui-explain {
 		width: 80%;
-		font-size: 26rpx;
+		font-size: $font-base;
 		font-weight: 400;
 		color: #fff;
 		opacity: 0.75;
@@ -275,7 +275,7 @@
 	}
 
 	.middle-tag {
-		font-size: 28rpx;
+		font-size: $font-base;
 		color: #333333;
 		line-height: 28rpx;
 		font-weight: bold;
@@ -333,7 +333,7 @@
 
 	.tui-order-text,
 	.tui-tool-text {
-		font-size: 26rpx;
+		font-size: $font-base;
 		font-weight: 400;
 		color: #666;
 	}

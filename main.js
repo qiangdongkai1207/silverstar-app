@@ -1,6 +1,6 @@
 /* 2.导入 小图标和公共样式 */
 import "./utils/icon/iconfont.css";
-import "./utils/css/public.css";
+import "./utils/css/public.scss";
 
 /* 3.导入配置文件 */
 import {
@@ -10,7 +10,7 @@ import {
 } from './system.js'
 Vue.prototype.appid = ID
 // Vue.prototype.registerTeacher = registerTeacher
-import "./utils/css/color_red.css";
+import "./utils/css/theme.scss";
 import "./utils/css/shadow.css";
 
 /* 4.配置VUEX */

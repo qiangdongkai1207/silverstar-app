@@ -3,14 +3,14 @@
 		<view class="container-box">
 			<!-- 卡片 -->
 			<view class="public-card" hover-class="card-hover" @tap="clickCard()">
-				<view class="card-tip-top blue-bg">
+				<view class="card-tip-top theme-bg">
 					离我最近
 				</view>
 				<view class="card-img">
 					<image src="../../../static/image/index/bg1.jpg"></image>
 				</view>
 				<view class="card-text">
-					<view class="top blue-color">永安街</view>
+					<view class="top theme-color">永安街</view>
 					<view><label>联系电话：</label>13526619279 </view>
 					<view><label>座机：</label>0371-66655567 </view>
 					<view><label>地址：</label>郑州市二七区京广路与永安街西南角二楼</view>
@@ -22,7 +22,7 @@
 
 			<!-- 卡片 -->
 			<view class="public-card" hover-class="card-hover" @tap="clickCard()">
-				<view class="card-tip-top blue-bg" v-show="false">
+				<view class="card-tip-top theme-bg" v-show="false">
 					离我最近
 				</view>
 				<view class="card-img">
@@ -41,7 +41,7 @@
 
 			<!-- 卡片 -->
 			<view class="public-card" hover-class="card-hover" @tap="clickCard()">
-				<view class="card-tip-top blue-bg" v-show="false">
+				<view class="card-tip-top theme-bg" v-show="false">
 					离我最近
 				</view>
 				<view class="card-img">

@@ -6,6 +6,13 @@
   "description": "yx小程序",
   "glyphs": [
     {
+      "icon_id": "1903805",
+      "name": "web__暂无记录",
+      "font_class": "web__zanwujilu",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
       "icon_id": "16399015",
       "name": "退出",
       "font_class": "tuichu",

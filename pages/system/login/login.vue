@@ -1,6 +1,6 @@
 <!-- 蓝色简洁登录页面 -->
 <template>
-	<view class="login-bg radiation-bg ">
+	<view class="login-bg theme-radiation-solid-bg ">
 		<image class="img-a" src="@/static/image/login/bg1.png"></image>
 		<!-- #ifndef MP-WEIXIN -->
 		<view class="logo">
@@ -10,7 +10,7 @@
 				</image>
 			</view>
 		</view>
-		<view class="t-login blue-btn">
+		<view class="t-login theme-btn">
 			<view class="t-b">欢 迎 您</view>
 			<form class="cl">
 				<view class="t-a">
@@ -31,7 +31,7 @@
 		</view>
 		<!-- #endif -->
 		<!-- #ifdef MP-WEIXIN -->
-		<view class="t-login weixin blue-btn">
+		<view class="t-login weixin theme-btn">
 			<view class="logo-weixin">
 				<view class="img boxshadow4">
 					<image mode="widthFix"
@@ -39,7 +39,7 @@
 					</image>
 				</view>
 			</view>
-			<view class="t-b-weixin">一一 第 三 方 登 录 一一</view>
+			<!-- <view class="t-b-weixin">一一 第 三 方 登 录 一一</view> -->
 			<form class="cl">
 				<button @tap="loginWeixin()">
 					<i class="iconfont icon-weixin" style=" font-size: 36rpx;"></i>

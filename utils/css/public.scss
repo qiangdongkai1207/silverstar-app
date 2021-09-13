@@ -1,12 +1,12 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	font-size: 32rpx;
+	font-size: $font-base;
 }
 
 view,
 label {
-	font-size: 32rpx;
+	font-size: $font-base;
 	box-sizing: border-box;
 }
 
@@ -90,7 +90,7 @@ page {
 
 .card-text {
 	margin-left: 30rpx;
-	font-size: 20rpx;
+	font-size: $font-base;
 	/* font-weight: bold; */
 	width: 440rpx;
 	color: #727281;
@@ -101,18 +101,18 @@ page {
 }
 
 .card-text view {
-	font-size: 26rpx;
+	font-size: $font-sm;
 }
 
 .card-text label {
-	font-size: 28rpx;
+	font-size: $font-base;
 	color: #b3b3b3;
 }
 
 .card-text .top {
 	margin-top: 0rpx;
 	font-weight: bold;
-	font-size: 36rpx;
+	font-size: $font-bg;
 }
 
 .card-tip-top {
@@ -121,7 +121,7 @@ page {
 	right: 25rpx;
 	width: 100rpx;
 	height: 40rpx;
-	font-size: 24rpx;
+	font-size: $font-sm;
 	padding: 5rpx 15rpx;
 	display: flex;
 	align-items: center;
@@ -135,7 +135,7 @@ page {
 	position: absolute;
 	bottom: 25rpx;
 	right: 30rpx;
-	font-size: 24rpx;
+	font-size: $font-sm;
 	display: flex;
 	align-items: center;
 	justify-content: center;
