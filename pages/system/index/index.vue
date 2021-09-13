@@ -341,11 +341,11 @@
 	}
 
 	.card-text view {
-		font-size: $font-sm;
+		font-size: $font-base-sm;
 	}
 
 	.card-text label {
-		font-size: $font-base;
+		// font-size: $font-base;
 		color: #b3b3b3;
 	}
 

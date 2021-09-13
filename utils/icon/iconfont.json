@@ -6,6 +6,27 @@
   "description": "yx小程序",
   "glyphs": [
     {
+      "icon_id": "20853323",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "17204027",
+      "name": "减号",
+      "font_class": "xianxingtubiaozhizuomoban-02",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "19680735",
+      "name": "减号",
+      "font_class": "minus-circle-fill",
+      "unicode": "eb41",
+      "unicode_decimal": 60225
+    },
+    {
       "icon_id": "1903805",
       "name": "web__暂无记录",
       "font_class": "web__zanwujilu",

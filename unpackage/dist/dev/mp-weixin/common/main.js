@@ -21,6 +21,7 @@ var _system = __webpack_require__(/*! ./system.js */ 7);
 
 __webpack_require__(/*! ./utils/css/theme.scss */ 8);
 __webpack_require__(/*! ./utils/css/shadow.css */ 9);
+__webpack_require__(/*! ./utils/css/thorui.min.css */ 128);
 
 
 var _store = _interopRequireDefault(__webpack_require__(/*! ./store/store.js */ 10));

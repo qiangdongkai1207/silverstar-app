@@ -10,6 +10,15 @@
 	box-shadow: 0px 1px 5px $font-color-blue;
 }
 
+.theme-shallow-bg{
+	background:$font-color-blue-shallow;
+	color: $font-color-blue;
+}
+
+.theme-shallow-bg-shadow{
+	box-shadow: 0px 1px 5px #d4dff1;
+}
+
 .theme-color,
 .theme-color .tui-icon:before,
 .theme-color .iconfont,

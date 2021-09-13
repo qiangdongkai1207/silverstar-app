@@ -9,6 +9,20 @@
 				"navigationBarTitleText": "首页"
 			}
 		},
+		// 学员信息表单
+		{
+			"path": "pages/user/bind-user-list/bind-user-list-form",
+			"style": {
+				"navigationBarTitleText": "编辑信息"
+			}
+		},
+		// 选择学员
+		{
+			"path": "pages/user/bind-user-list/bind-user-list-check",
+			"style": {
+				"navigationBarTitleText": "选择学员"
+			}
+		},
 		// 商品详情
 		{
 			"path": "pages/shop/shopInfo",
@@ -20,7 +34,7 @@
 
 		// 我的
 		{
-			"path": "pages/user/user",
+			"path": "pages/user/my-user",
 			"style": {
 				"enablePullDownRefresh": true,
 				"onReachBottomDistance": 50,
@@ -50,6 +64,8 @@
 			}
 		}
 
+
+
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -72,7 +88,7 @@
 			},
 			{
 				"text": "我的",
-				"pagePath": "pages/user/user",
+				"pagePath": "pages/user/my-user",
 				"iconPath": "static/image/tabbar/my.png",
 				"selectedIconPath": "static/image/tabbar/my_active_blue.png"
 			}

@@ -1,8 +1,10 @@
 {
   "pages": [
     "pages/system/index/index",
+    "pages/user/bind-user-list/bind-user-list-form",
+    "pages/user/bind-user-list/bind-user-list-check",
     "pages/shop/shopInfo",
-    "pages/user/user",
+    "pages/user/my-user",
     "pages/system/login/login",
     "pages/system/index-category/index-category"
   ],
@@ -28,7 +30,7 @@
       },
       {
         "text": "我的",
-        "pagePath": "pages/user/user",
+        "pagePath": "pages/user/my-user",
         "iconPath": "static/image/tabbar/my.png",
         "selectedIconPath": "static/image/tabbar/my_active_blue.png"
       }

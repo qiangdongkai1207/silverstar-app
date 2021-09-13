@@ -11,9 +11,15 @@
 				</view>
 				<view class="card-text">
 					<view class="top theme-color">永安街</view>
-					<view><label>联系电话：</label>13526619279 </view>
-					<view><label>座机：</label>0371-66655567 </view>
-					<view><label>地址：</label>郑州市二七区京广路与永安街西南角二楼</view>
+					<view class="card-text-lb"><label>电话：</label>
+						<view>13526619279</view>
+					</view>
+					<view class="card-text-lb"><label>座机：</label>
+						<view>0371-66655567</view>
+					</view>
+					<view class="card-text-lb"><label>地址：</label>
+						<view>郑州市二七区京广路与永安街西南角二楼</view>
+					</view>
 				</view>
 				<view class="card-tip-bottom">
 					距离：30m
@@ -30,9 +36,15 @@
 				</view>
 				<view class="card-text">
 					<view class="top">纬五路</view>
-					<view><label>联系电话：15515692178</label> </view>
-					<view><label>座机：0371-65925699</label> </view>
-					<view><label>地址：郑州市金水区纬五路与经三路交叉口经纬大厦10楼银星艺校</label></view>
+					<view class="card-text-lb"><label>电话：</label>
+						<view>15515692178 </view>
+					</view>
+					<view class="card-text-lb"><label>座机：</label>
+						<view>0371-65925699 </view>
+					</view>
+					<view class="card-text-lb"><label>地址：</label>
+						<view>郑州市金水区纬五路与经三路交叉口经纬大厦10楼银星艺校</view>
+					</view>
 				</view>
 				<view class="card-tip-bottom">
 					距离：1300m
@@ -49,9 +61,15 @@
 				</view>
 				<view class="card-text">
 					<view class="top">中原路</view>
-					<view><label>联系电话：15515692178</label> </view>
-					<view><label>座机：0371-65925699</label> </view>
-					<view><label>地址：郑州市二七区中原路与京广路交叉口（四中对面）“天赐良园”1号楼4楼银星艺校</label></view>
+					<view class="card-text-lb"><label>电话：</label>
+						<view>15515692178 </view>
+					</view>
+					<view class="card-text-lb"><label>座机：</label>
+						<view> 0371-65925699</view>
+					</view>
+					<view class="card-text-lb"><label>地址：</label>
+						<view>郑州市二七区中原路与京广路交叉口（四中对面）“天赐良园”1号楼4楼银星艺校</view>
+					</view>
 				</view>
 				<view class="card-tip-bottom">
 					距离：3100m

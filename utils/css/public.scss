@@ -56,12 +56,16 @@ page {
 /* 卡片 */
 .public-card {
 	width: auto;
-	padding: 25rpx 30rpx;
+	padding: 25rpx 10rpx 25rpx 20rpx;
 	border-radius: 20rpx;
 	box-shadow: 0px 1px 5px #e4e5e8;
 	background: #FFFFFF;
 	box-sizing: border-box;
 	padding-bottom: 65rpx;
+}
+
+.public-card text{
+	display: block;
 }
 
 .public-card {
@@ -72,6 +76,26 @@ page {
 	margin-top: 30rpx;
 	/* align-items: center; */
 }
+
+	.card-text-lb {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.card-text-lb>label {
+		flex: 2;
+	}
+
+	.card-text-lb>view {
+		flex: 7;
+		/* font-size: $font-base-sm; */
+	}
+
+	.card-text label {
+		font-size: $font-base-sm;
+		width: 150rpx;
+		display: block;
+	}
 
 .card-img {
 	width: 300rpx;
@@ -96,16 +120,17 @@ page {
 	color: #727281;
 }
 
-.card-text view {
+.card-text>view {
 	margin-top: 10rpx;
+	font-size: $font-base;
 }
-
-.card-text view {
-	font-size: $font-sm;
+.card-text>text {
+	margin-top: 20rpx;
+	font-size: $font-base;
 }
 
 .card-text label {
-	font-size: $font-base;
+	font-size: $font-base-sm;
 	color: #b3b3b3;
 }
 

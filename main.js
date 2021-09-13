@@ -12,6 +12,7 @@ Vue.prototype.appid = ID
 // Vue.prototype.registerTeacher = registerTeacher
 import "./utils/css/theme.scss";
 import "./utils/css/shadow.css";
+import "./utils/css/thorui.min.css";
 
 /* 4.配置VUEX */
 import store from './store/store.js'

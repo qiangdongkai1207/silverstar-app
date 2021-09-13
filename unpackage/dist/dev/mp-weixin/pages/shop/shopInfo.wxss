@@ -34,32 +34,34 @@
 .container {
   padding: 20rpx;
   padding-top: 0;
+  padding-bottom: 100rpx;
 }
 .tip-card-box {
-  margin-top: 30rpx;
+  margin-top: 50rpx;
 }
 .public-card {
   border-radius: 15rpx;
   margin-top: 0;
   border-top-left-radius: 0;
-  padding: 25rpx 20rpx;
+  border-top-right-radius: 0;
+  /* padding: 25rpx 20rpx; */
 }
 .tip-card-tip {
-  width: 170rpx;
+  /* width: 170rpx; 第一版 */
   padding: 15rpx 25rpx;
   box-sizing: content-box;
   font-size: 28rpx;
-  text-align: center;
+  text-align: left;
+  /* text-align: center; 第一版 */
   border-top-left-radius: 15rpx;
   border-top-right-radius: 15rpx;
+  /* 第二版*/
 }
 .card-text {
   width: 100%;
+  margin: 0;
 }
-.card-text label {
-  font-size: 28rpx;
-}
-.card-text view {
+.card-text > view {
   margin-top: 20rpx;
   font-size: 26rpx;
 }
@@ -86,12 +88,40 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  padding-bottom: 40rpx;
+  padding: 40rpx 0 00rpx 0;
 }
 .card-icon-btn {
-  padding: 15rpx 40rpx;
+  padding: 15rpx 50rpx;
   border-radius: 35rpx;
   font-size: 28rpx;
+}
+.card-user {
+  padding: 0;
+}
+.card-text-user {
+  margin: 0;
+}
+.card-text-user .top {
+  display: inline;
+}
+.card-text-user .card-text {
+  margin: 0;
+  padding: 30rpx 00rpx;
+  border-bottom: 1px solid #F6F6F6;
+}
+.card-text .iconfont {
+  display: inline;
+  color: red;
+  padding: 0rpx 30rpx 20rpx 50rpx;
+}
+/* .card-user .tui-icon::before{
+	font-size: 42rpx;
+} */
+.card-user label {
+  display: inline;
+  font-size: 34rpx;
+  color: #727281;
+  margin-left: 40rpx;
 }
 .card-show-img .public-card {
   display: block;
@@ -99,5 +129,33 @@
 }
 .card-show-img .public-card image {
   width: 100%;
+}
+.shop-bottom {
+  box-shadow: 0px 1px 5px #e4e5e8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* padding: 20rpx 15rpx; */
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.bottom-text {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+          flex: 4;
+  padding: 40rpx 45rpx;
+}
+.bottom-btn {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+  font-size: 34rpx;
+  padding: 40rpx 15rpx;
+  text-align: center;
 }
 

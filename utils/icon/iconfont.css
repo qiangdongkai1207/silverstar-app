@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2799148 */
-  src: url('iconfont.woff2?t=1631504723929') format('woff2'),
-       url('iconfont.woff?t=1631504723929') format('woff'),
-       url('iconfont.ttf?t=1631504723929') format('truetype');
+  src: url('iconfont.woff2?t=1631522424114') format('woff2'),
+       url('iconfont.woff?t=1631522424114') format('woff'),
+       url('iconfont.ttf?t=1631522424114') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bianji:before {
+  content: "\e6a2";
+}
+
+.icon-xianxingtubiaozhizuomoban-02:before {
+  content: "\e618";
+}
+
+.icon-minus-circle-fill:before {
+  content: "\eb41";
 }
 
 .icon-web__zanwujilu:before {
