@@ -168,7 +168,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.user-top-box {
 		width: 100%;
 		height: 380rpx;

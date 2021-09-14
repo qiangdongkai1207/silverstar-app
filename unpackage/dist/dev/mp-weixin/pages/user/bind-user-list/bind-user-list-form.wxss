@@ -1,8 +1,8 @@
 
-.container {
+.container.data-v-16c3993d {
 	padding: 20rpx 0 50rpx 0;
 }
-.tui-line-cell {
+.tui-line-cell.data-v-16c3993d {
 	width: 100%;
 	box-sizing: border-box;
 	display: -webkit-box;
@@ -12,13 +12,13 @@
 	-webkit-align-items: center;
 	        align-items: center;
 }
-.tui-title {
+.tui-title.data-v-16c3993d {
 	line-height: 32rpx;
 	min-width: 120rpx;
 	-webkit-flex-shrink: 0;
 	        flex-shrink: 0;
 }
-.tui-input {
+.tui-input.data-v-16c3993d {
 	font-size: 32rpx;
 	color: #333;
 	padding-left: 20rpx;
@@ -27,7 +27,7 @@
 	        flex: 1;
 	overflow: visible;
 }
-.radio-group {
+.radio-group.data-v-16c3993d {
 	margin-left: auto;
 	-webkit-transform: scale(0.8);
 	        transform: scale(0.8);
@@ -36,20 +36,20 @@
 	-webkit-flex-shrink: 0;
 	        flex-shrink: 0;
 }
-.tui-radio {
+.tui-radio.data-v-16c3993d {
 	display: inline-block;
 	padding-left: 28rpx;
 	font-size: 36rpx;
 	vertical-align: middle;
 }
-.tui-btn-box {
+.tui-btn-box.data-v-16c3993d {
 	padding: 40rpx 50rpx;
 	box-sizing: border-box;
 }
-.tui-button-gray {
+.tui-button-gray.data-v-16c3993d {
 	margin-top: 30rpx;
 }
-.tui-tips {
+.tui-tips.data-v-16c3993d {
 	padding: 30rpx;
 	color: #999;
 	font-size: 24rpx;

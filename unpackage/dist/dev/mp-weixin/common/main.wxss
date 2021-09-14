@@ -241,6 +241,27 @@ page {
           justify-content: center;
   color: #b3b3b3;
 }
+/* 卡片 结束 */
+/* 带tip的卡片 */
+.tip-card-tip {
+  width: 180rpx;
+  padding: 15rpx 25rpx;
+  box-sizing: content-box;
+  font-size: 28rpx;
+  text-align: left;
+  text-align: center;
+  border-radius: 15rpx 15rpx 0 0;
+  /* 第二版*/
+}
+.tip-card-box.coupon .public-card {
+  padding: 30rpx 20rpx;
+}
+.tip-card-box.coupon .card-text .coupon-item {
+  margin-top: 0rpx;
+}
+.tip-card-box.coupon .public-card .card-text {
+  margin-left: 0;
+}
 
 @charset "UTF-8";
 /**
@@ -279,17 +300,17 @@ page {
 .theme-btn button,
 .theme-bg,
 .theme-bg-shadow {
-  background: -webkit-linear-gradient(left, #4E77FF, #4E77FF);
-  background: linear-gradient(to right, #4E77FF, #4E77FF);
+  background: -webkit-linear-gradient(left, #E41F19, #E41F19);
+  background: linear-gradient(to right, #E41F19, #E41F19);
   /* background: linear-gradient(-30deg, #afd9ff, #ef7092); */
   color: #fff;
 }
 .theme-bg-shadow {
-  box-shadow: 0px 1px 5px #4E77FF;
+  box-shadow: 0px 1px 5px #E41F19;
 }
 .theme-shallow-bg {
   background: #F2F6FF;
-  color: #4E77FF;
+  color: #E41F19;
 }
 .theme-shallow-bg-shadow {
   box-shadow: 0px 1px 5px #d4dff1;
@@ -300,11 +321,11 @@ page {
 .theme-color ._i,
 .theme-color .iconfont:before {
   /* background: linear-gradient(-30deg, #afd9ff, #ef7092); */
-  color: #4E77FF !important;
+  color: #E41F19 !important;
 }
 .theme-radiation-solid-bg {
-  background: -webkit-linear-gradient(top, #4E77FF 30%, #74B1FF);
-  background: linear-gradient(to bottom, #4E77FF 30%, #74B1FF);
+  background: -webkit-linear-gradient(top, #E41F19 30%, #F65109);
+  background: linear-gradient(to bottom, #E41F19 30%, #F65109);
 }
 .theme-radiation-bg {
   background: -webkit-linear-gradient(60deg, #efbdd3, #89ccff);

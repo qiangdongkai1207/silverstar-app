@@ -166,3 +166,31 @@ page {
 	justify-content: center;
 	color: #b3b3b3;
 }
+/* 卡片 结束 */
+
+/* 带tip的卡片 */
+	.tip-card-tip {
+		width: 180rpx;
+		padding: 15rpx 25rpx;
+		box-sizing: content-box;
+		font-size: $font-base;
+		text-align: left;
+		text-align: center; 
+		// border-top-left-radius: 15rpx;
+		// border-top-right-radius: 15rpx;
+		border-radius: 15rpx 15rpx 0 0;
+		/* 第二版*/
+	}
+
+	.tip-card-box.coupon .public-card {
+		padding: 30rpx 20rpx;
+	}
+
+	.tip-card-box.coupon .card-text .coupon-item {
+		margin-top: 0rpx;
+	}
+
+
+	.tip-card-box.coupon .public-card .card-text {
+		margin-left: 0;
+	}

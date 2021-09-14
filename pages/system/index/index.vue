@@ -31,9 +31,9 @@
 										<view class="card-tip-top theme-bg">
 											火热报名
 										</view>
-										<view class="card-img">
+										<!-- <view class="card-img">
 											<image src="/static/image/index/bg1.jpg"></image>
-										</view>
+										</view> -->
 										<view class="card-text">
 											<view class="top">舞蹈课</view>
 											<view><label>报名时间：</label>2021年9月9日 - 2021年10月9日 </view>
@@ -172,7 +172,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	/* 左侧导航布局 start*/
 
 	.tui-searchbox {
@@ -248,7 +248,7 @@
 		color: #FFFFFF;
 		font-size: $font-lg;
 		font-weight: 600;
-		background: #4E77FF;
+		background: $font-color-blue;
 	}
 
 	.active::before {

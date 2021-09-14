@@ -31,20 +31,20 @@
 /* 边框颜色 优惠券组件的颜色 */
 /* 背景颜色 优惠券组件的颜色 */
 /* 行为相关颜色 优惠券组件的颜色 */
-.img-a {
+.img-a.data-v-c92b5fc8 {
   width: 100%;
   position: absolute;
 }
-.img-b {
+.img-b.data-v-c92b5fc8 {
   width: 100%;
   height: 45px;
   bottom: 0;
   position: absolute;
 }
-.login-bg {
+.login-bg.data-v-c92b5fc8 {
   height: 100vh;
 }
-.t-login {
+.t-login.data-v-c92b5fc8 {
   width: 660rpx;
   padding: 55rpx;
   margin: 0 auto;
@@ -56,13 +56,13 @@
   box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15);
   z-index: 9;
 }
-.t-login button {
+.t-login button.data-v-c92b5fc8 {
   font-size: 28rpx;
   height: 90rpx;
   line-height: 90rpx;
   border-radius: 50rpx;
 }
-.t-login input {
+.t-login input.data-v-c92b5fc8 {
   padding: 0 20rpx 0 20rpx;
   height: 90rpx;
   line-height: 90rpx;
@@ -72,10 +72,10 @@
   font-size: 28rpx;
   border-radius: 50rpx;
 }
-.t-login .t-a {
+.t-login .t-a.data-v-c92b5fc8 {
   position: relative;
 }
-.t-login .t-a image {
+.t-login .t-a image.data-v-c92b5fc8 {
   width: 40rpx;
   height: 40rpx;
   position: absolute;
@@ -83,47 +83,47 @@
   top: 28rpx;
   padding-right: 20rpx;
 }
-.t-login .t-b {
+.t-login .t-b.data-v-c92b5fc8 {
   text-align: left;
   font-size: 46rpx;
   color: #4E77FF;
   font-weight: bold;
   margin: 0 0 50rpx 20rpx;
 }
-.t-login .t-d {
+.t-login .t-d.data-v-c92b5fc8 {
   text-align: center;
   color: #999;
   margin: 80rpx 0;
 }
-.t-login .t-c {
+.t-login .t-c.data-v-c92b5fc8 {
   text-align: right;
   color: #c0c0c0;
   margin: -20rpx 30rpx 40rpx 0;
 }
-.t-login .t-f {
+.t-login .t-f.data-v-c92b5fc8 {
   text-align: center;
   margin: 200rpx 0 0 0;
   color: #666;
 }
-.t-login .t-f text {
+.t-login .t-f text.data-v-c92b5fc8 {
   margin-left: 20rpx;
   color: #aaaaaa;
   font-size: 27rpx;
 }
-.t-login .uni-input-placeholder {
+.t-login .uni-input-placeholder.data-v-c92b5fc8 {
   color: #aeaeae;
 }
-.cl {
+.cl.data-v-c92b5fc8 {
   zoom: 1;
 }
-.cl:after {
+.cl.data-v-c92b5fc8:after {
   clear: both;
   display: block;
   visibility: hidden;
   height: 0;
   content: '\20';
 }
-.cardBox {
+.cardBox.data-v-c92b5fc8 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -144,10 +144,10 @@
   color: #aaa;
   font-size: 28rpx;
 }
-.cardBox .txt {
+.cardBox .txt.data-v-c92b5fc8 {
   color: #4E77FF;
 }
-.logo, .logo-weixin {
+.logo.data-v-c92b5fc8, .logo-weixin.data-v-c92b5fc8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -158,33 +158,33 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.logo .img, .logo-weixin .img {
+.logo .img.data-v-c92b5fc8, .logo-weixin .img.data-v-c92b5fc8 {
   width: 200rpx;
   height: 200rpx;
   border-radius: 100%;
 }
-.logo .img image, .logo-weixin .img image {
+.logo .img image.data-v-c92b5fc8, .logo-weixin .img image.data-v-c92b5fc8 {
   width: 100%;
   border-radius: 100%;
 }
-.logo {
+.logo.data-v-c92b5fc8 {
   width: 100%;
   height: 45vw;
   position: relative;
   top: 120rpx;
 }
-.t-b-weixin {
+.t-b-weixin.data-v-c92b5fc8 {
   color: #999;
   font-size: 28rpx;
   margin-top: 50rpx !important;
 }
-.t-login.weixin {
+.t-login.weixin.data-v-c92b5fc8 {
   font-weight: bold;
   margin-top: 0 !important;
   top: 330rpx !important;
   padding-bottom: 80rpx !important;
 }
-.t-login.weixin button {
+.t-login.weixin button.data-v-c92b5fc8 {
   margin-top: 50rpx;
   display: -webkit-box;
   display: -webkit-flex;

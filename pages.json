@@ -9,6 +9,29 @@
 				"navigationBarTitleText": "首页"
 			}
 		},
+		// 报名成功
+		{
+			"path": "pages/shop/shop-ok/shop-ok",
+			"style": {
+				"navigationBarTitleText": "报名成功",
+				/* "navigationBarBackgroundColor": "#E41F19", */
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"animationType": "slide-in-bottom",
+					"bounce": "none",
+					"popGesture": "none" //禁止手势返回
+				}
+			}
+		},
+		// 选择校区
+		{
+			"path": "pages/system/index-category/index-category",
+			"style": {
+				"navigationBarTitleText": "选择校区"
+			}
+		},
+
 		// 学员信息表单
 		{
 			"path": "pages/user/bind-user-list/bind-user-list-form",
@@ -55,14 +78,8 @@
 					"popGesture": "none" //禁止手势返回
 				}
 			}
-		},
-		// 选择校区
-		{
-			"path": "pages/system/index-category/index-category",
-			"style": {
-				"navigationBarTitleText": "选择校区"
-			}
 		}
+
 
 
 
@@ -70,27 +87,27 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "",
-		"navigationBarBackgroundColor": "#fafafa",
-		"navigationBarBackgroundColor": "#4E77FF",
+		"navigationBarBackgroundColor": "#E41F19",
+		// "navigationBarBackgroundColor": "#4E77FF",
 		"backgroundColor": "#fafafa",
 		"backgroundColorTop": "#fafafa",
 		"backgroundColorBottom": "#fafafa"
 	},
 	"tabBar": {
 		"color": "#2E2E2E",
-		"selectedColor": "#4E77FF",
+		"selectedColor": "#E41F19",
 		"backgroundColor": "#FFFFFF",
 		"list": [{
 				"text": "首页",
 				"pagePath": "pages/system/index/index",
 				"iconPath": "static/image/tabbar/index.png",
-				"selectedIconPath": "static/image/tabbar/index_active_blue.png"
+				"selectedIconPath": "static/image/tabbar/index_active_red.png"
 			},
 			{
 				"text": "我的",
 				"pagePath": "pages/user/my-user",
 				"iconPath": "static/image/tabbar/my.png",
-				"selectedIconPath": "static/image/tabbar/my_active_blue.png"
+				"selectedIconPath": "static/image/tabbar/my_active_red.png"
 			}
 		]
 	}

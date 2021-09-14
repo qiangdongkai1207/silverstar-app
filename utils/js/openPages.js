@@ -60,6 +60,16 @@ const openPages = {
 			url: url
 		});
 	},
+	// 跳转报名成功
+	openShopOk(param) {
+		var url = '/pages/shop/shop-ok/shop-ok';
+		if (!!param) {
+			url = url + "?" + param;
+		}
+		uni.navigateTo({
+			url: url
+		});
+	},
 }
 
 export default openPages

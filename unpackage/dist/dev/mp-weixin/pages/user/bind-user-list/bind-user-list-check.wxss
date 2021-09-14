@@ -31,19 +31,19 @@
 /* 边框颜色 优惠券组件的颜色 */
 /* 背景颜色 优惠券组件的颜色 */
 /* 行为相关颜色 优惠券组件的颜色 */
-.container {
+.container.data-v-703373df {
   padding-bottom: 100rpx;
 }
-.public-card {
+.public-card.data-v-703373df {
   display: block;
   padding-top: 0;
 }
 /* 头部部分 */
-.box-list-top {
+.box-list-top.data-v-703373df {
   width: 100%;
   border-bottom: 1px solid #F6F6F6;
 }
-.box-list-top .btn {
+.box-list-top .btn.data-v-703373df {
   width: 100%;
   padding: 30rpx 20rpx 30rpx 20rpx;
   display: -webkit-box;
@@ -52,14 +52,14 @@
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.box-list-top .btn .add-btn {
+.box-list-top .btn .add-btn.data-v-703373df {
   width: 40%;
   padding: 15rpx 20rpx;
   border-radius: 50rpx;
   text-align: center;
 }
 /* 中间部分 */
-.check-list-check-box {
+.check-list-check-box.data-v-703373df {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -68,37 +68,37 @@
           flex-wrap: wrap;
   border-bottom: 1px solid #F6F6F6;
 }
-.check-list-check-box checkbox {
+.check-list-check-box checkbox.data-v-703373df {
   -webkit-box-flex: 8;
   -webkit-flex: 8;
           flex: 8;
   padding-left: 40rpx;
 }
 /* checkbox 选中的颜色 */
-.tui-checkbox .wx-checkbox-input {
+.tui-checkbox .wx-checkbox-input.data-v-703373df {
   border: 1px solid #8A8A8A;
 }
-.tui-checkbox .wx-checkbox-input.wx-checkbox-input-checked {
-  background-color: #4E77FF;
+.tui-checkbox .wx-checkbox-input.wx-checkbox-input-checked.data-v-703373df {
+  background-color: #E41F19;
 }
-.check-list-check-box checkbox label,
-.check-list-check-box checkbox view {
+.check-list-check-box checkbox label.data-v-703373df,
+.check-list-check-box checkbox view.data-v-703373df {
   display: block;
   font-size: 34rpx;
   padding: 40rpx 0 0rpx 50rpx;
 }
-.check-list-check-box checkbox view {
+.check-list-check-box checkbox view.data-v-703373df {
   padding-top: 0;
   padding-bottom: 40rpx;
   font-size: 28rpx;
   color: #8A8A8A;
 }
-.check-list-check-box ._i {
+.check-list-check-box ._i.data-v-703373df {
   -webkit-box-flex: 2;
   -webkit-flex: 2;
           flex: 2;
 }
-.check-list-check-box .iconfont {
+.check-list-check-box .iconfont.data-v-703373df {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -111,7 +111,7 @@
   font-size: 42rpx;
   color: #8A8A8A;
 }
-.bottom-box {
+.bottom-box.data-v-703373df {
   position: fixed;
   bottom: 50rpx;
   width: 100%;
@@ -125,7 +125,7 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.bottom-box .fixed-btn {
+.bottom-box .fixed-btn.data-v-703373df {
   width: 90%;
   text-align: center;
   padding: 20rpx;

@@ -3,7 +3,7 @@
 		<!-- 带tip的box -->
 		<view class="tip-card-box">
 			<view class="tip-card-tip theme-bg-shadow">
-				报 名 信 息
+				课 程 信 息
 			</view>
 			<view class="public-card">
 				<view class="card-text">
@@ -21,17 +21,6 @@
 					<!-- <view class="theme-important-color">
 						报名限时好礼相送~
 					</view> -->
-				</view>
-			</view>
-		</view>
-
-		<!-- 带tip的box -->
-		<view class="tip-card-box">
-			<view class="tip-card-tip theme-bg-shadow">
-				课 程 信 息
-			</view>
-			<view class="public-card">
-				<view class="card-text">
 					<view class="card-text-lb">
 						<label>教师：</label>
 						<view>张三</view>
@@ -56,9 +45,21 @@
 		</view>
 
 		<!-- 带tip的box -->
+		<!-- <view class="tip-card-box">
+			<view class="tip-card-tip theme-bg-shadow">
+				课 程 信 息
+			</view>
+			<view class="public-card">
+				<view class="card-text">
+					
+				</view>
+			</view>
+		</view> -->
+
+		<!-- 带tip的box -->
 		<view class="tip-card-box coupon">
 			<view class="tip-card-tip theme-important-bg-shadow theme-important-bg">
-				体 验 金
+				领 取 体 验 券
 			</view>
 			<view class="public-card">
 				<view class="card-text">
@@ -162,7 +163,7 @@
 	}
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 	.container {
 		padding: 20rpx;
 		padding-top: 0;
@@ -177,20 +178,8 @@
 		border-radius: 15rpx;
 		margin-top: 0;
 		border-top-left-radius: 0;
-		border-top-right-radius: 0;
+		/* border-top-right-radius: 0; */
 		/* padding: 25rpx 20rpx; */
-	}
-
-	.tip-card-tip {
-		/* width: 170rpx; 第一版 */
-		padding: 15rpx 25rpx;
-		box-sizing: content-box;
-		font-size: $font-base;
-		text-align: left;
-		/* text-align: center; 第一版 */
-		border-top-left-radius: 15rpx;
-		border-top-right-radius: 15rpx;
-		/* 第二版*/
 	}
 
 	.card-text {
@@ -201,19 +190,6 @@
 	.card-text>view {
 		margin-top: 20rpx;
 		font-size: $font-base-sm;
-	}
-
-	.tip-card-box.coupon .public-card {
-		padding: 30rpx 20rpx;
-	}
-
-	.tip-card-box.coupon .card-text .coupon-item {
-		margin-top: 0rpx;
-	}
-
-
-	.tip-card-box.coupon .public-card .card-text {
-		margin-left: 0;
 	}
 
 	.card-icon,

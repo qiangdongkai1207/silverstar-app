@@ -1,38 +1,39 @@
 {
   "pages": [
     "pages/system/index/index",
+    "pages/shop/shop-ok/shop-ok",
+    "pages/system/index-category/index-category",
     "pages/user/bind-user-list/bind-user-list-form",
     "pages/user/bind-user-list/bind-user-list-check",
     "pages/shop/shopInfo",
     "pages/user/my-user",
-    "pages/system/login/login",
-    "pages/system/index-category/index-category"
+    "pages/system/login/login"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "",
-    "navigationBarBackgroundColor": "#4E77FF",
+    "navigationBarBackgroundColor": "#E41F19",
     "backgroundColor": "#fafafa",
     "backgroundColorTop": "#fafafa",
     "backgroundColorBottom": "#fafafa"
   },
   "tabBar": {
     "color": "#2E2E2E",
-    "selectedColor": "#4E77FF",
+    "selectedColor": "#E41F19",
     "backgroundColor": "#FFFFFF",
     "list": [
       {
         "text": "首页",
         "pagePath": "pages/system/index/index",
         "iconPath": "static/image/tabbar/index.png",
-        "selectedIconPath": "static/image/tabbar/index_active_blue.png"
+        "selectedIconPath": "static/image/tabbar/index_active_red.png"
       },
       {
         "text": "我的",
         "pagePath": "pages/user/my-user",
         "iconPath": "static/image/tabbar/my.png",
-        "selectedIconPath": "static/image/tabbar/my_active_blue.png"
+        "selectedIconPath": "static/image/tabbar/my_active_red.png"
       }
     ]
   },

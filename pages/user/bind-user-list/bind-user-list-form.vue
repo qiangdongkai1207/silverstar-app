@@ -197,7 +197,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.container {
 		padding: 20rpx 0 50rpx 0;
 	}

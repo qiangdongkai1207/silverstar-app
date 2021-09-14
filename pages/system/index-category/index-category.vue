@@ -17,8 +17,8 @@
 					<view class="card-text-lb"><label>座机：</label>
 						<view>0371-66655567</view>
 					</view>
-					<view class="card-text-lb"><label>地址：</label>
-						<view>郑州市二七区京广路与永安街西南角二楼</view>
+					<view class="card-text-lb">
+						位于郑州市二七区京广路与永安街西南角二楼
 					</view>
 				</view>
 				<view class="card-tip-bottom">
@@ -96,7 +96,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@import "index-category.scss";
 
 	.container-box {
@@ -105,5 +105,9 @@
 		padding: 20rpx;
 		padding-top: 0;
 		box-sizing: border-box;
+	}
+
+	.card-text label {
+		display: block;
 	}
 </style>

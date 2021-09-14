@@ -31,57 +31,37 @@
 /* 边框颜色 优惠券组件的颜色 */
 /* 背景颜色 优惠券组件的颜色 */
 /* 行为相关颜色 优惠券组件的颜色 */
-.container {
+.container.data-v-236f3994 {
   padding: 20rpx;
   padding-top: 0;
   padding-bottom: 100rpx;
 }
-.tip-card-box {
+.tip-card-box.data-v-236f3994 {
   margin-top: 50rpx;
 }
-.public-card {
+.public-card.data-v-236f3994 {
   border-radius: 15rpx;
   margin-top: 0;
   border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  /* border-top-right-radius: 0; */
   /* padding: 25rpx 20rpx; */
 }
-.tip-card-tip {
-  /* width: 170rpx; 第一版 */
-  padding: 15rpx 25rpx;
-  box-sizing: content-box;
-  font-size: 28rpx;
-  text-align: left;
-  /* text-align: center; 第一版 */
-  border-top-left-radius: 15rpx;
-  border-top-right-radius: 15rpx;
-  /* 第二版*/
-}
-.card-text {
+.card-text.data-v-236f3994 {
   width: 100%;
   margin: 0;
 }
-.card-text > view {
+.card-text > view.data-v-236f3994 {
   margin-top: 20rpx;
   font-size: 26rpx;
 }
-.tip-card-box.coupon .public-card {
-  padding: 30rpx 20rpx;
-}
-.tip-card-box.coupon .card-text .coupon-item {
-  margin-top: 0rpx;
-}
-.tip-card-box.coupon .public-card .card-text {
-  margin-left: 0;
-}
-.card-icon,
-.card-icon-box {
+.card-icon.data-v-236f3994,
+.card-icon-box.data-v-236f3994 {
   width: 100%;
 }
-.card-icon {
+.card-icon.data-v-236f3994 {
   padding-bottom: 40rpx;
 }
-.card-icon-box {
+.card-icon-box.data-v-236f3994 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -90,26 +70,26 @@
           justify-content: center;
   padding: 40rpx 0 00rpx 0;
 }
-.card-icon-btn {
+.card-icon-btn.data-v-236f3994 {
   padding: 15rpx 50rpx;
   border-radius: 35rpx;
   font-size: 28rpx;
 }
-.card-user {
+.card-user.data-v-236f3994 {
   padding: 0;
 }
-.card-text-user {
+.card-text-user.data-v-236f3994 {
   margin: 0;
 }
-.card-text-user .top {
+.card-text-user .top.data-v-236f3994 {
   display: inline;
 }
-.card-text-user .card-text {
+.card-text-user .card-text.data-v-236f3994 {
   margin: 0;
   padding: 30rpx 00rpx;
   border-bottom: 1px solid #F6F6F6;
 }
-.card-text .iconfont {
+.card-text .iconfont.data-v-236f3994 {
   display: inline;
   color: red;
   padding: 0rpx 30rpx 20rpx 50rpx;
@@ -117,20 +97,20 @@
 /* .card-user .tui-icon::before{
 	font-size: 42rpx;
 } */
-.card-user label {
+.card-user label.data-v-236f3994 {
   display: inline;
   font-size: 34rpx;
   color: #727281;
   margin-left: 40rpx;
 }
-.card-show-img .public-card {
+.card-show-img .public-card.data-v-236f3994 {
   display: block;
   padding: 0;
 }
-.card-show-img .public-card image {
+.card-show-img .public-card image.data-v-236f3994 {
   width: 100%;
 }
-.shop-bottom {
+.shop-bottom.data-v-236f3994 {
   box-shadow: 0px 1px 5px #e4e5e8;
   position: fixed;
   bottom: 0;
@@ -144,13 +124,13 @@
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.bottom-text {
+.bottom-text.data-v-236f3994 {
   -webkit-box-flex: 4;
   -webkit-flex: 4;
           flex: 4;
   padding: 40rpx 45rpx;
 }
-.bottom-btn {
+.bottom-btn.data-v-236f3994 {
   -webkit-box-flex: 3;
   -webkit-flex: 3;
           flex: 3;

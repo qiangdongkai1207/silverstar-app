@@ -31,13 +31,13 @@
 /* 边框颜色 优惠券组件的颜色 */
 /* 背景颜色 优惠券组件的颜色 */
 /* 行为相关颜色 优惠券组件的颜色 */
-.user-top-box {
+.user-top-box.data-v-36672a01 {
   width: 100%;
   height: 380rpx;
   position: relative;
   overflow: hidden;
 }
-.user-top-box-bg {
+.user-top-box-bg.data-v-36672a01 {
   width: 119%;
   height: 100%;
   border-bottom-right-radius: 300rpx;
@@ -46,7 +46,7 @@
   top: -4%;
   left: -8%;
 }
-.tui-avatar {
+.tui-avatar.data-v-36672a01 {
   -webkit-flex-shrink: 0;
           flex-shrink: 0;
   width: 128rpx;
@@ -54,12 +54,12 @@
   display: block;
   border-radius: 100rpx;
 }
-.tui-img-vip {
+.tui-img-vip.data-v-36672a01 {
   width: 56rpx;
   height: 24rpx;
   margin-left: 18rpx;
 }
-.tui-header-center {
+.tui-header-center.data-v-36672a01 {
   position: absolute;
   width: 100%;
   height: 128rpx;
@@ -72,11 +72,11 @@
   display: flex;
   /* align-items: center; */
 }
-.tui-info {
+.tui-info.data-v-36672a01 {
   width: 60%;
   padding-left: 30rpx;
 }
-.tui-nickname {
+.tui-nickname.data-v-36672a01 {
   font-size: 42rpx;
   font-weight: 500;
   color: #fff;
@@ -87,7 +87,7 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.tui-explain {
+.tui-explain.data-v-36672a01 {
   width: 80%;
   font-size: 28rpx;
   font-weight: 400;
@@ -99,7 +99,7 @@
   text-overflow: ellipsis;
 }
 /* 中间位置 */
-.middle-container {
+.middle-container.data-v-36672a01 {
   height: 138rpx;
   display: -webkit-box;
   display: -webkit-flex;
@@ -115,7 +115,7 @@
   margin-top: -130rpx !important;
   position: relative;
 }
-.public-card {
+.public-card.data-v-36672a01 {
   padding: 0;
   z-index: 2;
   border-radius: 10rpx;
@@ -125,7 +125,7 @@
           flex-direction: row;
   margin: 30rpx 30rpx 26rpx 30rpx;
 }
-.middle-item {
+.middle-item.data-v-36672a01 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -141,19 +141,19 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.ticket-img {
+.ticket-img.data-v-36672a01 {
   width: 80rpx;
   height: 80rpx;
   margin-left: 65rpx;
 }
-.middle-tag {
+.middle-tag.data-v-36672a01 {
   font-size: 28rpx;
   color: #333333;
   line-height: 28rpx;
   font-weight: bold;
   padding-left: 22rpx;
 }
-.tui-order-list {
+.tui-order-list.data-v-36672a01 {
   width: 100%;
   height: 134rpx;
   padding: 0;
@@ -169,12 +169,12 @@
 	-ms-flex-pack: justify;
 	justify-content: space-between; */
 }
-.tui-flex-wrap {
+.tui-flex-wrap.data-v-36672a01 {
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
   height: auto;
 }
-.tui-tool-item {
+.tui-tool-item.data-v-36672a01 {
   width: 25%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -191,21 +191,21 @@
           flex-direction: column;
   padding: 30rpx 40rpx;
 }
-.tui-icon-box {
+.tui-icon-box.data-v-36672a01 {
   position: relative;
 }
-.tui-icon-box .tui-icon:before,
-.tui-icon-box .iconfont:before {
+.tui-icon-box .tui-icon.data-v-36672a01:before,
+.tui-icon-box .iconfont.data-v-36672a01:before {
   font-size: 62rpx;
 }
-.tui-icon-box.explain .tui-icon:before {
+.tui-icon-box.explain .tui-icon.data-v-36672a01:before {
   font-size: 56rpx;
 }
-.tui-icon-box.tuichu .iconfont:before {
+.tui-icon-box.tuichu .iconfont.data-v-36672a01:before {
   font-size: 48rpx;
 }
-.tui-order-text,
-.tui-tool-text {
+.tui-order-text.data-v-36672a01,
+.tui-tool-text.data-v-36672a01 {
   font-size: 28rpx;
   font-weight: 400;
   color: #666;
