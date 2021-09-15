@@ -40,6 +40,7 @@
   margin-top: 22rpx;
   border: 1px solid #eeeeee;
   position: relative;
+  overflow: hidden;
 }
 .coupon-item .coupon-money {
   width: 465rpx;
@@ -101,30 +102,63 @@
   font-size: 24rpx;
   float: right;
 }
-.coupon-item:after {
-  width: 40rpx;
-  height: 20rpx;
-  position: absolute;
-  left: 460rpx;
-  top: -1px;
-  border-radius: 0 0 40rpx 40rpx;
-  content: "";
-  display: block;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  border-top: 0px;
+/* 作废 */
+.be-overdue .layof {
+  color: #666666 !important;
 }
-.coupon-item:before {
-  width: 40rpx;
-  height: 20rpx;
-  position: absolute;
-  left: 460rpx;
-  bottom: -1px;
-  border-radius: 40rpx 40rpx 0 0;
-  content: "";
-  display: block;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  border-bottom: 0px;
+.be-overdue .get-btn {
+  /* color: transparent !important;
+		background: transparent !important;
+		border: none !important; */
+  display: none !important;
 }
+.be-overdue::after {
+  position: absolute;
+  content: '已过期';
+  top: 32rpx;
+  left: -59rpx;
+  width: 34%;
+  height: 50rpx;
+  background: #666666;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  box-shadow: 0px 1px 5px #666666;
+}
+.be-overdue::before {
+  position: absolute;
+  content: '无法使用';
+  top: 110rpx;
+  right: 55rpx;
+  background: #FFFFFF;
+  color: #a5a5a5;
+  font-size: 28rpx;
+}
+/* .coupon-item:after {
+	width: 40upx;
+	height: 20upx;
+	position: absolute;
+	left: 460upx;
+	top: -1px;
+	border-radius: 0 0 40upx 40upx;
+	content: "";
+	display: block;
+	background: $bgcolor_white;
+	border: 1px solid #eeeeee;
+	border-top: 0px;
+} */
+/* .coupon-item:before {
+	width: 40upx;
+	height: 20upx;
+	position: absolute;
+	left: 460upx;
+	bottom: -1px;
+	border-radius: 40upx 40upx 0 0;
+	content: "";
+	display: block;
+	background: $bgcolor_white;
+	border: 1px solid #eeeeee;
+	border-bottom: 0px;
+} */
 

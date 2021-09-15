@@ -70,6 +70,12 @@ const openPages = {
 			url: url
 		});
 	},
+	// 跳转优惠券
+	openCoupon(param) {
+		uni.navigateTo({
+			url: '/pages/shop/coupon/coupon'
+		});
+	},
 }
 
 export default openPages

@@ -19,6 +19,12 @@
 	box-shadow: 0px 1px 5px #d4dff1;
 }
 
+.theme-bordeer-bg{
+	background: #FFFFFF;
+	border: 1px solid $font-color-blue;
+	color: $font-color-blue;
+}
+
 .theme-color,
 .theme-color .tui-icon:before,
 .theme-color .iconfont,

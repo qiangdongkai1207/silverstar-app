@@ -1,11 +1,13 @@
 {
   "pages": [
     "pages/system/index/index",
+    "pages/shop/shopInfo",
+    "pages/shop/order/order",
+    "pages/shop/coupon/coupon",
     "pages/shop/shop-ok/shop-ok",
+    "pages/user/bind-user-list/bind-user-list-check",
     "pages/system/index-category/index-category",
     "pages/user/bind-user-list/bind-user-list-form",
-    "pages/user/bind-user-list/bind-user-list-check",
-    "pages/shop/shopInfo",
     "pages/user/my-user",
     "pages/system/login/login"
   ],

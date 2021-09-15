@@ -1,9 +1,15 @@
 <template>
 	<view class="container">
 		<view class="tui-searchbox">
-			<view class="tui-search-input" @tap="search">
-				<icon type="search" :size="13" color="#999"></icon>
-				<text class="tui-search-text">搜索课程</text>
+			<view class="tui-searchbox-top">
+				<!-- <i class="iconfont icon-qiehuan" @tap="clickIndexCategory()"></i> -->
+				<view class="tui-search-input" @tap="clickSearchbox()">
+					<icon type="search" :size="13" color="#999"></icon>
+					<text class="tui-search-text">搜索课程</text>
+				</view>
+			</view>
+			<view class="tui-search-check" @tap="clickIndexCategory()">
+				当前校区：永安街[点击切换]
 			</view>
 		</view>
 		<!-- <view>
@@ -18,7 +24,6 @@
 		</scroll-view>
 		<scroll-view @scroll="scroll" scroll-anchoring scroll-y scroll-with-animation class="right-box"
 			:scroll-into-view="scrollView_rightId" :style="{ height: height + 'px', top: top + 'px' }">
-			<!--内容部分 start 自定义可删除-->
 			<block v-for="(item, index) in tabbar" :key="index">
 				<t-linkage :distanceTop="distanceTop" :recalc="1" :scrollTop="scrollTop" :index="index"
 					@linkage="linkage">
@@ -31,16 +36,24 @@
 										<view class="card-tip-top theme-bg">
 											火热报名
 										</view>
-										<!-- <view class="card-img">
+										<view class="card-img" v-if="false">
 											<image src="/static/image/index/bg1.jpg"></image>
-										</view> -->
+										</view>
 										<view class="card-text">
 											<view class="top">舞蹈课</view>
-											<view><label>报名时间：</label>2021年9月9日 - 2021年10月9日 </view>
-											<view><label>简介：</label>适合18岁以下的儿童</view>
+											<view><label>报名时间：</label>
+												<text class="text-indent">2021年9月9日 - 2021年10月9日</text>
+											</view>
+											<view><label>上课时间：</label>
+												<text class="text-indent">周一 18：00 - 21：00</text>
+												<text class="text-indent">周六 9：00 - 12：00</text>
+											</view>
+											<view><label>要求：</label>
+												<text class="text-indent">适合18岁以下的儿童</text>
+											</view>
 										</view>
 										<view class="card-tip-bottom">
-											报名限时好礼相送~
+											点击了解详情
 										</view>
 									</view>
 								</view>
@@ -94,7 +107,7 @@
 						top = 44;
 						//#endif
 						this.height = res.windowHeight - uni.upx2px(header);
-						this.top = top + uni.upx2px(header);
+						this.top = top + uni.upx2px(header) + 20;
 					}
 				});
 			}, 50);
@@ -168,22 +181,29 @@
 			clickCard() {
 				this.openPages.openShopInfo();
 			},
+			clickIndexCategory() {
+				// this.tui.alert("切换");
+				this.openPages.openIndexCategory();
+			},
+			clickSearchbox() {
+				this.tui.alert("查询");
+			}
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
+	/* 导航栏 */
 	/* 左侧导航布局 start*/
-
 	.tui-searchbox {
 		width: 100%;
-		height: 92rpx;
-		padding: 0 30rpx;
+		height: 132rpx;
+		padding: 15rpx 30rpx;
 		box-sizing: border-box;
 		background-color: #fff;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -191,6 +211,30 @@
 		top: 44px;
 		/* #endif */
 		z-index: 100;
+
+		.tui-searchbox-top {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.tui-search-input {
+				flex: 13;
+			}
+
+			i {
+				flex: 1;
+				font-size: $font-bg;
+				padding: 0 0 0 10rpx;
+				color: $font-color-auto;
+			}
+		}
+
+		.tui-search-check {
+			font-size: $font-base-sm;
+			margin-top: 10rpx;
+			padding-left: 10rpx;
+			color: $font-color-auto;
+		}
 	}
 
 	.tui-searchbox::after {
@@ -217,12 +261,12 @@
 	}
 
 	.tui-search-text {
-		padding-left: 16rpx;
+		padding-left: $font-base;
 	}
 
 	.tab-view {
 		/* height: 100%; */
-		width: 140rpx;
+		width: 150rpx;
 		position: fixed;
 		left: 0;
 		z-index: 10;
@@ -245,18 +289,18 @@
 
 	.active {
 		position: relative;
-		color: #FFFFFF;
+		color: $font-color-blue;
 		font-size: $font-lg;
 		font-weight: 600;
-		background: $font-color-blue;
+		background: $font-color-blue-shallow;
 	}
 
 	.active::before {
-		/* content: '';
+		content: '';
 		position: absolute;
-		border-left: 8rpx solid #e41f19;
+		border-left: 8rpx solid $font-color-blue;
 		height: 30rpx;
-		left: 0; */
+		left: 0;
 	}
 
 	/* 左侧导航布局 end*/
@@ -264,7 +308,7 @@
 	.right-box {
 		width: 100%;
 		position: fixed;
-		padding-left: 160rpx;
+		padding-left: 170rpx;
 		box-sizing: border-box;
 		left: 0;
 	}
@@ -290,6 +334,7 @@
 	.class-name {
 		font-size: $font-bg;
 		font-weight: bold;
+		color: $font-color-auto;
 	}
 
 	.g-container {
@@ -331,7 +376,7 @@
 	}
 
 	.tab-bar-item text {
-		font-size: $font-sm;
+		font-size: $font-base;
 	}
 
 	.card-tip-bottom {

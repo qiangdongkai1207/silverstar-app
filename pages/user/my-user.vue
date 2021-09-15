@@ -34,9 +34,9 @@
 						<tui-icon name="message" color="#fff" :size="26"></tui-icon>
 						<view class="tui-badge tui-badge-white">1</view>
 					</view> -->
-					<view class="tui-icon-box tui-icon-setup" @tap="waitCode">
+					<!-- <view class="tui-icon-box tui-icon-setup" @tap="waitCode">
 						<tui-icon name="setup" color="#fff"></tui-icon>
-					</view>
+					</view> -->
 				</view>
 			</view>
 		</view>
@@ -45,7 +45,7 @@
 				<image class="ticket-img" src="/static/image/user/sign-up.png"></image>
 				<text class="middle-tag">我的报名</text>
 			</view>
-			<view @tap="waitCode" class="middle-item" hover-class="card-hover" :hover-stay-time="150">
+			<view @tap="openCoupon()" class="middle-item" hover-class="card-hover" :hover-stay-time="150">
 				<image class="ticket-img" src="/static/image/user/coupon.png"></image>
 				<text class="middle-tag">优惠券</text>
 			</view>
@@ -59,7 +59,7 @@
 					</view>
 					<view class="tui-tool-text">退出</view>
 				</view>
-				<view class=" tui-tool-item" hover-class="card-hover">
+				<!-- <view class=" tui-tool-item" hover-class="card-hover">
 					<view class="tui-icon-box theme-color">
 						<tui-icon name="setup-fill" class=""></tui-icon>
 					</view>
@@ -71,7 +71,7 @@
 						<tui-icon name="explain-fill" class=""></tui-icon>
 					</view>
 					<view class="tui-tool-text">帮助</view>
-				</view>
+				</view> -->
 			</view>
 		</view>
 		<!-- <button style="margin-top: 300rpx;" @tap="logout()"> 退出</button>
@@ -163,6 +163,9 @@
 					//退出
 					this.logout();
 				}
+			},
+			openCoupon() {
+				this.openPages.openCoupon();
 			},
 		}
 	}

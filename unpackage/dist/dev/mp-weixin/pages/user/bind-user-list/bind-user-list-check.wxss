@@ -74,13 +74,6 @@
           flex: 8;
   padding-left: 40rpx;
 }
-/* checkbox 选中的颜色 */
-.tui-checkbox .wx-checkbox-input.data-v-703373df {
-  border: 1px solid #8A8A8A;
-}
-.tui-checkbox .wx-checkbox-input.wx-checkbox-input-checked.data-v-703373df {
-  background-color: #E41F19;
-}
 .check-list-check-box checkbox label.data-v-703373df,
 .check-list-check-box checkbox view.data-v-703373df {
   display: block;

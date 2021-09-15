@@ -4,18 +4,20 @@
 		<view class="YmContent">
 			<view class="main">
 				<view class="tip">
-					<image v-on:click="icon_19_click()" src="/static/image/util/reg_ok_icon_19.jpg" mode="scaleToFill"
-						border="0" class="icon"></image>
+					<image src="/static/image/util/reg_ok_icon_19.jpg" mode="scaleToFill" border="0" class="icon">
+					</image>
 					<text decode="true" class="reg_ok_20">报名成功</text>
 					<text decode="true" class="reg_ok_21">请到指定校区进行报道</text>
 				</view>
-				<button v-on:click="btOk_27_click()" class="btOk">完成
-				</button>
+				<view class="btn-div">
+					<view class="theme-bordeer-bg" @tap="openIndex()">
+						返回首页
+					</view>
+					<view class="theme-bg theme-bg-shadow">
+						查看报名列表
+					</view>
+				</view>
 			</view>
-
-
-			<view class="loading">{{loadingText}}</view>
-			<view class="ymBbottom"></view>
 		</view>
 	</view>
 </template>
@@ -28,18 +30,49 @@
 		onLoad() {
 
 		},
-		methods: {}
+		methods: {
+			// 打开首页
+			openIndex() {
+				this.openPages.openIndex();
+			},
+		}
 	}
 </script>
 
 <style lang="scss" scoped>
-	@import './shop-ok.scss';
+	@import "./shop-ok.scss";
+
+	.container {
+		background: #FFFFFF;
+	}
+
+	.main {
+		background: #FFFFFF;
+		box-sizing: content-box;
+	}
 
 	page {
 		background: #FFFFFF;
 	}
 
 	.YmContent {
-		padding-top: 100rpx;
+		padding-top: 150rpx;
+	}
+
+	.btn-div {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: -30rpx;
+		margin-top: 50rpx;
+	}
+
+	.btn-div view {
+		flex: 1;
+		text-align: center;
+		padding: 20rpx 30rpx;
+		border-radius: 50rpx;
+		margin-left: 50rpx;
 	}
 </style>

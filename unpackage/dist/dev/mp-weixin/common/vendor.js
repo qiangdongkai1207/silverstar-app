@@ -10557,6 +10557,12 @@ var openPages = {
     uni.navigateTo({
       url: url });
 
+  },
+  // 跳转优惠券
+  openCoupon: function openCoupon(param) {
+    uni.navigateTo({
+      url: '/pages/shop/coupon/coupon' });
+
   } };var _default =
 
 
@@ -10567,12 +10573,101 @@ openPages;exports.default = _default;
 /* 20 */,
 /* 21 */,
 /* 22 */,
-/* 23 */,
+/* 23 */
+/*!********************************************************************************!*\
+  !*** E:/工作/自己的项目/报名系统/app/silverstar-app/silverstar-app/utils/js/appUpdate.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var appUpdate = {
+  NewestVer: null, //云端版本号
+  checkUrl: '',
+  forcedUpdates: 0, //云端强制更新  1 强制 0不强制
+  downloadUrl: '', //云端下载地址
+  init: function init(url) {
+    if (url == null || url == '') return;
+    this.checkUrl = url;
+    if (window.plus) {
+      this.plusReady();
+    } else {
+      document.addEventListener('plusready', this.plusReady, false);
+    }
+  },
+  plusReady: function plusReady() {var _this = this;
+    plus.runtime.getProperty(plus.runtime.appid, function (inf) {
+      _this.wgtVer = inf.version;
+      _this.getAppVersion();
+    });
+  },
+  getAppVersion: function getAppVersion() {var _this2 = this;
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      switch (xhr.readyState) {
+        case 4:
+          if (xhr.status == 200) {
+            var obj = JSON.parse(xhr.responseText);
+            debugger;
+            console.log(obj);
+            console.log("当前版本【" + _this2.wgtVer + "】云端版本【" + _this2.NewestVer + "】更新地址【" + _this2.downloadUrl + "】是否强制更新【" + _this2.
+            forcedUpdates);
+          } else {
+            //检测更新失败
+          }
+          break;
+        default:
+          try {} catch (e) {}
+          break;}
+
+    };
+    xhr.open('POST', this.checkUrl);
+    xhr.send();
+  },
+  updateXCX: function updateXCX() {//小程序更新
+    var updateManager = uni.getUpdateManager();
+    updateManager.onCheckForUpdate(function (res) {
+      // 请求完新版本信息的回调
+      if (res.hasUpdate) {
+        updateManager.onUpdateReady(function (res2) {
+          uni.showModal({
+            title: '更新提示',
+            content: '发现新版本，是否重启应用?',
+            cancelColor: '#eeeeee',
+            confirmColor: '#FF0000',
+            success: function success(res2) {
+              if (res2.confirm) {
+                // 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
+                updateManager.applyUpdate();
+              }
+            } });
+
+        });
+      }
+    });
+
+    updateManager.onUpdateFailed(function (res) {
+      // 新的版本下载失败
+      uni.showModal({
+        title: '提示',
+        content: '检查到有新版本，但下载失败，请检查网络设置',
+        success: function success(res) {
+          if (res.confirm) {
+            // 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
+            updateManager.applyUpdate();
+          }
+        } });
+
+    });
+  } };var _default =
+
+appUpdate;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
 /* 24 */,
 /* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */
+/* 26 */
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
   \**********************************************************************************************************/
@@ -10698,341 +10793,6 @@ function normalizeComponent (
   }
 }
 
-
-/***/ }),
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */
-/*!*************************************************************************************************************!*\
-  !*** E:/工作/自己的项目/报名系统/app/silverstar-app/silverstar-app/components/common/tui-validation/tui-validation.js ***!
-  \*************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _createForOfIteratorHelper(o, allowArrayLike) {var it;if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {if (it) o = it;var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e) {throw _e;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e2) {didErr = true;err = _e2;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        * 表单验证
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        * @author echo.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        * @version 1.6.5
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        **/
-
-var form = {
-  //非必填情况下,如果值为空,则不进行校验
-  //当出现错误时返回错误消息，否则返回空即为验证通过
-  /*
-   formData:Object 表单对象。{key:value,key:value},key==rules.name
-   rules: Array [{name:name,rule:[],msg:[],validator:[],{name:name,rule:[],msg:[],validator:[]}]
-  		name:name 属性=> 元素的名称
-  		rule:字符串数组 ["required","isMobile","isEmail","isCarNo","isIdCard","isAmount","isNum","isChinese","isNotChinese","isEnglish",isEnAndNo","isSpecial","isEmoji",""isDate","isUrl","isSame:key","range:[1,9]","minLength:9","maxLength:Number","isKeyword:key1,key2,key3..."]
-  		msg:数组 []。 与数组 rule 长度相同,对应的错误提示信息
-  		validator:[{msg:'错误消息',method:Function}]，自定义验证方法组，函数约定：(value)=>{ return true or false}
-  */
-  validation: function validation(formData, rules) {var _iterator = _createForOfIteratorHelper(
-    rules),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var item = _step.value;
-        var key = item.name;
-        var rule = item.rule;
-        var validator = item.validator;
-        var msgArr = item.msg;
-        if (!key || !rule || rule.length === 0 || !msgArr || msgArr.length === 0 || !~rule.indexOf(
-        "required") && formData[key].toString().
-        length === 0) {
-          continue;
-        }
-        for (var i = 0, length = rule.length; i < length; i++) {
-          var ruleItem = rule[i];
-          var msg = msgArr[i];
-          if (!msg || !ruleItem) continue;
-          //数据处理
-          var value = null;
-          if (~ruleItem.indexOf(":")) {
-            var temp = ruleItem.split(":");
-            ruleItem = temp[0];
-            value = temp[1];
-          }
-          var isError = false;
-          switch (ruleItem) {
-            case "required":
-              isError = form._isNullOrEmpty(formData[key]);
-              break;
-            case "isMobile":
-              isError = !form._isMobile(formData[key]);
-              break;
-            case "isEmail":
-              isError = !form._isEmail(formData[key]);
-              break;
-            case "isCarNo":
-              isError = !form._isCarNo(formData[key]);
-              break;
-            case "isIdCard":
-              isError = !form._isIdCard(formData[key]);
-              break;
-            case "isAmount":
-              isError = !form._isAmount(formData[key]);
-              break;
-            case "isNum":
-              isError = !form._isNum(formData[key]);
-              break;
-            case "isChinese":
-              isError = !form._isChinese(formData[key]);
-              break;
-            case "isNotChinese":
-              isError = !form._isNotChinese(formData[key]);
-              break;
-            case "isEnglish":
-              isError = !form._isEnglish(formData[key]);
-              break;
-            case "isEnAndNo":
-              isError = !form._isEnAndNo(formData[key]);
-              break;
-            case "isEnOrNo":
-              isError = !form._isEnOrNo(formData[key]);
-              break;
-            case "isSpecial":
-              isError = form._isSpecial(formData[key]);
-              break;
-            case "isEmoji":
-              isError = form._isEmoji(formData[key]);
-              break;
-            case "isDate":
-              isError = !form._isDate(formData[key]);
-              break;
-            case "isUrl":
-              isError = !form._isUrl(formData[key]);
-              break;
-            case "isSame":
-              isError = !form._isSame(formData[key], formData[value]);
-              break;
-            case "range":
-              var range = null;
-              try {
-                range = JSON.parse(value);
-                if (range.length <= 1) {
-                  throw new Error("range值传入有误！");
-                }
-              } catch (e) {
-                return "range值传入有误！";
-              }
-              isError = !form._isRange(formData[key], range[0], range[1]);
-              break;
-            case "minLength":
-              isError = !form._minLength(formData[key], value);
-              break;
-            case "maxLength":
-              isError = !form._maxLength(formData[key], value);
-              break;
-            case "isKeyword":
-              isError = !form._isKeyword(formData[key], value);
-              break;
-            default:
-              break;}
-
-
-          if (isError) {
-            return msg;
-          }
-        }
-        if (validator && validator.length > 0) {var _iterator2 = _createForOfIteratorHelper(
-          validator),_step2;try {for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {var model = _step2.value;
-              var func = model.method;
-              if (func && !func(formData[key])) {
-                return model.msg;
-              }
-            }} catch (err) {_iterator2.e(err);} finally {_iterator2.f();}
-        }
-      }} catch (err) {_iterator.e(err);} finally {_iterator.f();}
-    return "";
-  },
-  //允许填写字符串null或者undefined
-  _isNullOrEmpty: function _isNullOrEmpty(value) {
-    return value === null || value === '' || value === undefined ? true : false;
-  },
-  _isMobile: function _isMobile(value) {
-    return /^(?:13\d|14\d|15\d|16\d|17\d|18\d|19\d)\d{5}(\d{3}|\*{3})$/.test(value);
-  },
-  _isEmail: function _isEmail(value) {
-    return /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/.test(value);
-  },
-  _isCarNo: function _isCarNo(value) {
-    // 新能源车牌
-    var xreg =
-    /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF]$)|([DF][A-HJ-NP-Z0-9][0-9]{4}$))/;
-    // 旧车牌
-    var creg =
-    /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}$/;
-    if (value.length === 7) {
-      return creg.test(value);
-    } else if (value.length === 8) {
-      return xreg.test(value);
-    } else {
-      return false;
-    }
-  },
-  _isIdCard: function _isIdCard(value) {
-    var idCard = value;
-    if (idCard.length == 15) {
-      return this.__isValidityBrithBy15IdCard;
-    } else if (idCard.length == 18) {
-      var arrIdCard = idCard.split("");
-      if (this.__isValidityBrithBy18IdCard(idCard) && this.__isTrueValidateCodeBy18IdCard(arrIdCard)) {
-        return true;
-      } else {
-        return false;
-      }
-    } else {
-      return false;
-    }
-  },
-  __isTrueValidateCodeBy18IdCard: function __isTrueValidateCodeBy18IdCard(arrIdCard) {
-    var sum = 0;
-    var Wi = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1];
-    var ValideCode = [1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2];
-    if (arrIdCard[17].toLowerCase() == 'x') {
-      arrIdCard[17] = 10;
-    }
-    for (var i = 0; i < 17; i++) {
-      sum += Wi[i] * arrIdCard[i];
-    }
-    var valCodePosition = sum % 11;
-    if (arrIdCard[17] == ValideCode[valCodePosition]) {
-      return true;
-    } else {
-      return false;
-    }
-  },
-  __isValidityBrithBy18IdCard: function __isValidityBrithBy18IdCard(idCard18) {
-    var year = idCard18.substring(6, 10);
-    var month = idCard18.substring(10, 12);
-    var day = idCard18.substring(12, 14);
-    var temp_date = new Date(year, parseFloat(month) - 1, parseFloat(day));
-    if (temp_date.getFullYear() != parseFloat(year) || temp_date.getMonth() != parseFloat(month) - 1 ||
-    temp_date.getDate() !=
-    parseFloat(day)) {
-      return false;
-    } else {
-      return true;
-    }
-  },
-  __isValidityBrithBy15IdCard: function __isValidityBrithBy15IdCard(idCard15) {
-    var year = idCard15.substring(6, 8);
-    var month = idCard15.substring(8, 10);
-    var day = idCard15.substring(10, 12);
-    var temp_date = new Date(year, parseFloat(month) - 1, parseFloat(day));
-
-    if (temp_date.getYear() != parseFloat(year) || temp_date.getMonth() != parseFloat(month) - 1 ||
-    temp_date.getDate() !=
-    parseFloat(day)) {
-      return false;
-    } else {
-      return true;
-    }
-  },
-  _isAmount: function _isAmount(value) {
-    //金额，只允许保留两位小数
-    return /^([0-9]*[.]?[0-9])[0-9]{0,1}$/.test(value);
-  },
-  _isNum: function _isNum(value) {
-    //只能为数字
-    return /^[0-9]+$/.test(value);
-  },
-  //是否全部为中文
-  _isChinese: function _isChinese(value) {
-    var reg = /^[\u4e00-\u9fa5]+$/;
-    return value !== "" && reg.test(value) && !form._isSpecial(value) && !form._isEmoji(value);
-  },
-  //是否不包含中文，可以有特殊字符
-  _isNotChinese: function _isNotChinese(value) {
-    var reg = /.*[\u4e00-\u9fa5]+.*$/;
-    var result = true;
-    if (reg.test(value)) {
-      result = false;
-    }
-    return result;
-  },
-  _isEnglish: function _isEnglish(value) {
-    return /^[a-zA-Z]*$/.test(value);
-  },
-  _isEnAndNo: function _isEnAndNo(value) {
-    //8~20位数字和字母组合
-    return /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,20}$/.test(value);
-  },
-  _isEnOrNo: function _isEnOrNo(value) {
-    //英文或者数字
-    var reg = /.*[\u4e00-\u9fa5]+.*$/;
-    var result = true;
-    if (reg.test(value) || form._isSpecial(value) || form._isEmoji(value)) {
-      result = false;
-    }
-    return result;
-  },
-  _isSpecial: function _isSpecial(value) {
-    //是否包含特殊字符
-    var regEn = /[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im,
-    regCn = /[·！#￥（——）：；“”‘、，|《。》？、【】[\]]/im;
-    if (regEn.test(value) || regCn.test(value)) {
-      return true;
-    }
-    return false;
-  },
-  _isEmoji: function _isEmoji(value) {
-    //是否包含表情
-    return /\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDE4F]/g.test(value);
-  },
-  _isDate: function _isDate(value) {
-    //2019-10-12
-    var reg =
-    /^(?:(?!0000)[0-9]{4}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$/;
-    return reg.test(value);
-  },
-  _isUrl: function _isUrl(value) {
-    return /^((https?|ftp|file):\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/.test(value);
-  },
-  _isSame: function _isSame(value1, value2) {
-    return value1 === value2;
-  },
-  _isRange: function _isRange(value, range1, range2) {
-    if (!range1 && range1 != 0 && !range2 && range2 != 0) {
-      return true;
-    } else if (!range1 && range1 != 0) {
-      return value <= range2;
-    } else if (!range2 && range2 != 0) {
-      return value >= range1;
-    } else {
-      return value >= range1 && value <= range2;
-    }
-  },
-  _minLength: function _minLength(value, min) {
-    return value.length >= Number(min);
-  },
-  _maxLength: function _maxLength(value, max) {
-    return value.length <= Number(max);
-  },
-  _isKeyword: function _isKeyword(value, keywords) {
-    //是否包含关键词，敏感词，多个以英文逗号分隔，包含则为false,弹出提示语！
-    var result = true;
-    if (!keywords) return result;
-    var key = keywords.split(',');
-    for (var i = 0, len = key.length; i < len; i++) {
-      if (~value.indexOf(key[i])) {
-        result = false;
-        break;
-      }
-    }
-    return result;
-  } };
-
-module.exports = {
-  validation: form.validation };
 
 /***/ })
 ]]);

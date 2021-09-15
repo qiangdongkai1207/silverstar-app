@@ -162,10 +162,40 @@ input.data-v-81208c12 {
   font-size: 33rpx;
   line-height: 93rpx;
 }
+.container.data-v-81208c12 {
+  background: #FFFFFF;
+}
+.main.data-v-81208c12 {
+  background: #FFFFFF;
+  box-sizing: content-box;
+}
 page.data-v-81208c12 {
   background: #FFFFFF;
 }
 .YmContent.data-v-81208c12 {
-  padding-top: 100rpx;
+  padding-top: 150rpx;
+}
+.btn-div.data-v-81208c12 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-left: -30rpx;
+  margin-top: 50rpx;
+}
+.btn-div view.data-v-81208c12 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 20rpx 30rpx;
+  border-radius: 50rpx;
+  margin-left: 50rpx;
 }
 

@@ -53,6 +53,10 @@ page {
 	background: #F0F3FF;
 }
 
+.text-indent{
+	text-indent: 30rpx;
+}
+
 /* 卡片 */
 .public-card {
 	width: auto;
@@ -137,7 +141,8 @@ page {
 .card-text .top {
 	margin-top: 0rpx;
 	font-weight: bold;
-	font-size: $font-bg;
+	font-size: $font-bg !important;
+	color: $font-color-block;
 }
 
 .card-tip-top {
@@ -194,3 +199,22 @@ page {
 	.tip-card-box.coupon .public-card .card-text {
 		margin-left: 0;
 	}
+	
+/* checkbox 选中的颜色 */
+	.tui-checkbox .wx-checkbox-input {
+		border: 1px solid #8A8A8A;
+	}
+
+	.tui-checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+		background-color: $font-color-blue;
+
+	}
+	
+	// .tui-radio .wx-radio-input {
+	// 	border: 1px solid #8A8A8A;
+	// }
+	
+	// .tui-radio .wx-radio-input.wx-radio-input-checked {
+	// 	background-color: $font-color-blue;
+	
+	// }

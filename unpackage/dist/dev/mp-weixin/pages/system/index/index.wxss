@@ -31,13 +31,20 @@
 /* 边框颜色 优惠券组件的颜色 */
 /* 背景颜色 优惠券组件的颜色 */
 /* 行为相关颜色 优惠券组件的颜色 */
+/* 导航栏 */
 /* 左侧导航布局 start*/
 .tui-searchbox.data-v-6e1c11a4 {
   width: 100%;
-  height: 92rpx;
-  padding: 0 30rpx;
+  height: 132rpx;
+  padding: 15rpx 30rpx;
   box-sizing: border-box;
   background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.tui-searchbox .tui-searchbox-top.data-v-6e1c11a4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -47,10 +54,25 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
+}
+.tui-searchbox .tui-searchbox-top .tui-search-input.data-v-6e1c11a4 {
+  -webkit-box-flex: 13;
+  -webkit-flex: 13;
+          flex: 13;
+}
+.tui-searchbox .tui-searchbox-top ._i.data-v-6e1c11a4 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 34rpx;
+  padding: 0 0 0 10rpx;
+  color: #727281;
+}
+.tui-searchbox .tui-search-check.data-v-6e1c11a4 {
+  font-size: 26rpx;
+  margin-top: 10rpx;
+  padding-left: 10rpx;
+  color: #727281;
 }
 .tui-searchbox.data-v-6e1c11a4::after {
   content: '';
@@ -80,11 +102,11 @@
           justify-content: center;
 }
 .tui-search-text.data-v-6e1c11a4 {
-  padding-left: 16rpx;
+  padding-left: 28rpx;
 }
 .tab-view.data-v-6e1c11a4 {
   /* height: 100%; */
-  width: 140rpx;
+  width: 150rpx;
   position: fixed;
   left: 0;
   z-index: 10;
@@ -111,23 +133,23 @@
 }
 .active.data-v-6e1c11a4 {
   position: relative;
-  color: #FFFFFF;
+  color: #E41F19;
   font-size: 32rpx;
   font-weight: 600;
-  background: #E41F19;
+  background: #fdebed;
 }
 .active.data-v-6e1c11a4::before {
-  /* content: '';
-	position: absolute;
-	border-left: 8rpx solid #e41f19;
-	height: 30rpx;
-	left: 0; */
+  content: '';
+  position: absolute;
+  border-left: 8rpx solid #E41F19;
+  height: 30rpx;
+  left: 0;
 }
 /* 左侧导航布局 end*/
 .right-box.data-v-6e1c11a4 {
   width: 100%;
   position: fixed;
-  padding-left: 160rpx;
+  padding-left: 170rpx;
   box-sizing: border-box;
   left: 0;
 }
@@ -150,6 +172,7 @@
 .class-name.data-v-6e1c11a4 {
   font-size: 34rpx;
   font-weight: bold;
+  color: #727281;
 }
 .g-container.data-v-6e1c11a4 {
   /* padding-top: 20rpx; */
@@ -190,7 +213,7 @@
   margin-left: 20rpx;
 }
 .tab-bar-item text.data-v-6e1c11a4 {
-  font-size: 24rpx;
+  font-size: 28rpx;
 }
 .card-tip-bottom.data-v-6e1c11a4 {
   color: #f00 !important;

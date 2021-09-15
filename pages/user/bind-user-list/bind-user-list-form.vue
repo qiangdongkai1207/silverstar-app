@@ -7,14 +7,35 @@
 					<view class="tui-title">学员姓名</view>
 					<input placeholder-class="tui-phcolor" class="tui-input" name="name" placeholder="请输入学员姓名"
 						maxlength="50" type="text" />
-					<!-- <radio-group class="radio-group" name="sex">
+					<radio-group class="radio-group" name="sex">
 						<label class="tui-radio">
 							<radio value="1" color="#5677fc" />男
 						</label>
 						<label class="tui-radio">
 							<radio value="2" color="#5677fc" />女
 						</label>
-					</radio-group> -->
+					</radio-group>
+				</view>
+			</tui-list-cell>
+			<tui-list-cell :hover="false">
+				<view class="tui-line-cell" @tap="clickBirthday()">
+					<view class="tui-title">生日</view>
+					<input placeholder-class="tui-phcolor" class="tui-input" name="birthday" placeholder="点击选择日期"
+						v-model="birthdayDatetime.result" disabled="true" maxlength="50" type="text" />
+				</view>
+			</tui-list-cell>
+			<tui-list-cell :hover="false">
+				<view class="tui-line-cell">
+					<view class="tui-title">联系电话</view>
+					<input placeholder-class="tui-phcolor" class="tui-input" name="phone" placeholder="请输入联系电话"
+						maxlength="50" type="text" />
+				</view>
+			</tui-list-cell>
+			<tui-list-cell :hover="false">
+				<view class="tui-line-cell">
+					<view class="tui-title">学员就读学校</view>
+					<input placeholder-class="tui-phcolor" class="tui-input" name="school" placeholder="选填学员就读学校"
+						maxlength="50" type="text" />
 				</view>
 			</tui-list-cell>
 			<!-- <tui-list-cell :hover="false">
@@ -24,20 +45,14 @@
 						maxlength="50" type="text" />
 				</view>
 			</tui-list-cell> -->
-			<tui-list-cell :hover="false">
+			<!-- <tui-list-cell :hover="false">
 				<view class="tui-line-cell">
 					<view class="tui-title">学员身份证</view>
 					<input placeholder-class="tui-phcolor" class="tui-input" name="idcard" placeholder="请输入学员身份证"
 						maxlength="50" type="text" />
 				</view>
-			</tui-list-cell>
-			<tui-list-cell :hover="false">
-				<view class="tui-line-cell">
-					<view class="tui-title">学员就读学校</view>
-					<input placeholder-class="tui-phcolor" class="tui-input" name="idcard" placeholder="请输入学员就读学校"
-						maxlength="50" type="text" />
-				</view>
-			</tui-list-cell>
+			</tui-list-cell> -->
+			<!--
 			<tui-list-cell :hover="false">
 				<view class="tui-line-cell">
 					<view class="tui-title">学员就读年级</view>
@@ -80,34 +95,35 @@
 					<input placeholder-class="tui-phcolor" class="tui-input" name="idcard" placeholder="请输入紧急备用联系电话"
 						maxlength="50" type="text" />
 				</view>
-			</tui-list-cell>
-			<tui-list-cell :hover="false">
-				<view class="tui-line-cell">
-					<view class="tui-title">联系地址</view>
-					<input placeholder-class="tui-phcolor" class="tui-input" name="idcard" placeholder="请输入联系地址"
-						maxlength="50" type="text" />
-				</view>
-			</tui-list-cell>
-			<tui-list-cell :hover="false">
+			</tui-list-cell> -->
+			<!-- <tui-list-cell :hover="false">
 				<view class="tui-line-cell">
 					<view class="tui-title">监护人身份证</view>
 					<input placeholder-class="tui-phcolor" class="tui-input" name="idcard" placeholder="请输入监护人身份证"
 						maxlength="50" type="text" />
 				</view>
-			</tui-list-cell>
+			</tui-list-cell> -->
 			<view class="tui-btn-box">
-				<button class="tui-button-primary theme-bg" hover-class="tui-button-hover" formType="submit"
-					type="primary">确认</button>
+				<!-- <button class="tui-button-primary theme-bg" hover-class="tui-button-hover" formType="submit"
+					type="primary">确认</button> -->
+				<button class="tui-button-primary theme-bg" hover-class="tui-button-hover"
+					@tap="clickSubmit()">确认</button>
 				<button class="tui-button-primary tui-button-gray" hover-class="tui-button-gray_hover"
 					formType="reset">重置</button>
 			</view>
 		</form>
+		<tui-datetime ref="dateTime" :type="birthdayDatetime.type" :startYear="birthdayDatetime.startYear"
+			:endYear="birthdayDatetime.endYear" :cancelColor="birthdayDatetime.cancelColor"
+			:color="cbirthdayDatetime.olor" :setDateTime="birthdayDatetime.setDateTime"
+			:unitTop="birthdayDatetime.unitTop" :radius="birthdayDatetime.radius" @confirm="changeBirthday">
+		</tui-datetime>
 	</view>
 </template>
 <script>
 	import tuiListCell from "@/components/thorui/tui-list-cell/tui-list-cell"
-	import tuiListViem from "@/components/thorui/tui-list-view/tui-list-view.vue"
-	const form = require("@/components/common/tui-validation/tui-validation.js")
+	import tuiListViem from "@/components/thorui/tui-list-view/tui-list-view"
+	import tuiDatetime from "@/components/thorui/tui-datetime/tui-datetime"
+	// const form = require("@/components/common/tui-validation/tui-validation.js")
 
 	function checkKeyword(value) {
 		if (~value.indexOf("***")) {
@@ -118,10 +134,23 @@
 	export default {
 		components: {
 			tuiListCell,
-			tuiListViem
+			tuiListViem,
+			tuiDatetime
 		},
 		data() {
-			return {}
+			return {
+				birthdayDatetime: {
+					type: 2,
+					startYear: 1980,
+					endYear: 2021,
+					cancelColor: '#E41F19',
+					color: '#5677fc',
+					setDateTime: '',
+					result: '',
+					unitTop: false,
+					radius: true
+				}
+			}
 		},
 		methods: {
 			formSubmit: function(e) {
@@ -192,7 +221,22 @@
 			},
 			formReset: function(e) {
 				console.log("清空数据")
-			}
+			},
+			// 提交
+			clickSubmit() {
+				uni.navigateBack({
+					delta: 1
+				});
+			},
+			//点击选择生日
+			clickBirthday() {
+				this.$refs.dateTime.show();
+			},
+			// 更改选择生日
+			changeBirthday(e) {
+				console.log(e);
+				this.birthdayDatetime.result = e.result;
+			},
 		}
 	}
 </script>

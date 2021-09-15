@@ -61,6 +61,17 @@
 .card-icon.data-v-236f3994 {
   padding-bottom: 40rpx;
 }
+.card-icon-null-box.data-v-236f3994 {
+  width: 100%;
+}
+.card-icon-null.data-v-236f3994 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
 .card-icon-box.data-v-236f3994 {
   display: -webkit-box;
   display: -webkit-flex;

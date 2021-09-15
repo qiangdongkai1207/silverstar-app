@@ -20,7 +20,7 @@
 					<input type="password" name="code" maxlength="6" placeholder="请输入密码" v-model="pwd" />
 				</view>
 				<view class="t-c" @tap="forgotPwd()">忘记密码</view>
-				<button @tap="login()">登 录</button>
+				<button @tap="loginWeixin()">登 录</button>
 			</form>
 		</view>
 		<view class="cardBox">

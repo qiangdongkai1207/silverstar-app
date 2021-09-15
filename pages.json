@@ -9,6 +9,30 @@
 				"navigationBarTitleText": "首页"
 			}
 		},
+		{
+			"path": "pages/shop/shopInfo",
+			"style": {
+				"navigationBarTitleText": "报名"
+			}
+		},
+
+
+
+		// 我的订单
+		{
+			"path": "pages/shop/order/order",
+			"style": {
+				"navigationBarTitleText": "我的报名列表"
+			}
+		},
+
+		// 优惠券
+		{
+			"path": "pages/shop/coupon/coupon",
+			"style": {
+				"navigationBarTitleText": "优惠券"
+			}
+		},
 		// 报名成功
 		{
 			"path": "pages/shop/shop-ok/shop-ok",
@@ -24,6 +48,17 @@
 				}
 			}
 		},
+
+		// 选择学员
+		{
+			"path": "pages/user/bind-user-list/bind-user-list-check",
+			"style": {
+				"navigationBarTitleText": "选择学员"
+			}
+		},
+
+
+
 		// 选择校区
 		{
 			"path": "pages/system/index-category/index-category",
@@ -39,20 +74,8 @@
 				"navigationBarTitleText": "编辑信息"
 			}
 		},
-		// 选择学员
-		{
-			"path": "pages/user/bind-user-list/bind-user-list-check",
-			"style": {
-				"navigationBarTitleText": "选择学员"
-			}
-		},
+
 		// 商品详情
-		{
-			"path": "pages/shop/shopInfo",
-			"style": {
-				"navigationBarTitleText": "报名"
-			}
-		},
 
 
 		// 我的

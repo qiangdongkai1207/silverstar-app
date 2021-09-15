@@ -59,12 +59,12 @@
 		<!-- 带tip的box -->
 		<view class="tip-card-box coupon">
 			<view class="tip-card-tip theme-important-bg-shadow theme-important-bg">
-				领 取 体 验 券
+				限 时 体 验
 			</view>
 			<view class="public-card">
 				<view class="card-text">
 					<coupon @tap="clickCoupon()" v-bind:item="coupon" types="simplest" theme="#ff6c00" color="#ffffff"
-						bg="#FFFCEF" solid="#F00" getBtnText="领取"></coupon>
+						bg="#FFFCEF" solid="#F00" getBtnText=""></coupon>
 				</view>
 			</view>
 		</view>
@@ -76,10 +76,12 @@
 			</view>
 			<view class="public-card card-user">
 				<view class="card-icon">
-					<view class="card-icon-box" v-show="user.list.length == 0">
-						<i class="iconfont icon-web__zanwujilu" style=" font-size: 300rpx;color: #666666;"></i>
+					<view class="card-icon-null-box" v-show="userSignUpList.length == 0">
+						<view class="card-icon-null" v-show="userSignUpList.length == 0">
+							<i class="iconfont icon-web__zanwujilu" style=" font-size: 300rpx;color: #666666;"></i>
+						</view>
 					</view>
-					<view class="card-text-user" v-show="user.list.length != 0">
+					<view class="card-text-user" v-show="userSignUpList.length != 0">
 						<view class="card-text">
 							<view class="top">
 								<i class="iconfont icon-xianxingtubiaozhizuomoban-02" @tap="userRemove()"></i>
@@ -116,8 +118,8 @@
 
 		<!-- 底部 -->
 		<view class="shop-bottom">
-			<view class="bottom-text theme-important-color">限时好礼相送，快来体验吧~</view>
-			<view class="bottom-btn theme-bg theme-bg-shadow">立即报名</view>
+			<view class="bottom-text theme-important-color">即刻起到校区进行体验，还有好礼相送哦~</view>
+			<view class="bottom-btn theme-bg theme-bg-shadow" @tap="shopOk()">立即报名体验</view>
 		</view>
 	</view>
 </template>
@@ -134,15 +136,13 @@
 			return {
 				// 优惠券
 				coupon: {
-					money: "免费体验课 2节",
-					title: "价值699元的体验券",
+					money: "报名免费体验课 2节",
+					title: "限时报名体验价值699元",
 					state: "1"
 				},
 
 				// 学员信息
-				user: {
-					list: [1]
-				}
+				userSignUpList: [1]
 			}
 		},
 		onLoad() {
@@ -150,7 +150,7 @@
 		},
 		methods: {
 			clickCoupon() {
-				this.tui.alert('体验金领取成功，最多只能领取10张', 4000)
+				// this.tui.alert('体验券领取成功，立即报名后，将保存到我的优惠券中', 4000)
 			},
 			userRemove() {
 				this.tui.alert('移除学员');
@@ -158,6 +158,10 @@
 			// 添加学员
 			clickAddUser() {
 				this.openPages.openBindUserListCheck();
+			},
+			// 报名
+			shopOk() {
+				this.openPages.openShopOk();
 			},
 		}
 	}
@@ -199,6 +203,15 @@
 
 	.card-icon {
 		padding-bottom: 40rpx;
+	}
+
+	.card-icon-null-box {
+		width: 100%;
+	}
+
+	.card-icon-null {
+		display: flex;
+		justify-content: center;
 	}
 
 	.card-icon-box {

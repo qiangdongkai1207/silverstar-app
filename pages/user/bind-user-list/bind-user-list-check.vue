@@ -4,7 +4,7 @@
 		<view class="box-list  public-card">
 			<view class="box-list-top">
 				<view class="btn">
-					<view class="add-btn theme-shallow-bg theme-shallow-bg-shadow" @tap="clickUserForm()">添加学员</view>
+					<view class="add-btn theme-bordeer-bg " @tap="clickUserForm()">添加学员</view>
 					<view></view>
 				</view>
 			</view>
@@ -62,7 +62,7 @@
 			},
 			// 点击编辑用户信息
 			editUser() {
-				this.tui.alert("点击用户修改")
+				this.openPages.openBindUserListForm();
 			},
 			// 打开学员表单
 			clickUserForm() {
@@ -119,16 +119,6 @@
 	.check-list-check-box checkbox {
 		flex: 8;
 		padding-left: 40rpx;
-	}
-
-	/* checkbox 选中的颜色 */
-	.tui-checkbox .wx-checkbox-input {
-		border: 1px solid #8A8A8A;
-	}
-
-	.tui-checkbox .wx-checkbox-input.wx-checkbox-input-checked {
-		background-color: $font-color-blue;
-
 	}
 
 	.check-list-check-box checkbox label,

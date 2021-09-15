@@ -18,7 +18,7 @@
 						<view>0371-66655567</view>
 					</view>
 					<view class="card-text-lb">
-						位于郑州市二七区京广路与永安街西南角二楼
+						郑州市二七区京广路与永安街西南角二楼
 					</view>
 				</view>
 				<view class="card-tip-bottom">
