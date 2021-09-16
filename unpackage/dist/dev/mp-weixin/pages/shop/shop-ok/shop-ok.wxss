@@ -168,12 +168,13 @@ input.data-v-81208c12 {
 .main.data-v-81208c12 {
   background: #FFFFFF;
   box-sizing: content-box;
+  padding-bottom: 500rpx;
 }
 page.data-v-81208c12 {
   background: #FFFFFF;
 }
 .YmContent.data-v-81208c12 {
-  padding-top: 150rpx;
+  padding-top: 50rpx;
 }
 .btn-div.data-v-81208c12 {
   width: 100%;
@@ -187,7 +188,7 @@ page.data-v-81208c12 {
   -webkit-align-items: center;
           align-items: center;
   margin-left: -30rpx;
-  margin-top: 50rpx;
+  padding-top: 50rpx;
 }
 .btn-div view.data-v-81208c12 {
   -webkit-box-flex: 1;

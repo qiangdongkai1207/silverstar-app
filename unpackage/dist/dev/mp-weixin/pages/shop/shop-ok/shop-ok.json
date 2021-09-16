@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "报名成功",
-  "navigationStyle": "custom",
   "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#fff",
   "usingComponents": {}
 }

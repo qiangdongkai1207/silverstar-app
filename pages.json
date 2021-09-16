@@ -9,6 +9,16 @@
 				"navigationBarTitleText": "首页"
 			}
 		},
+		// 报名成功
+		{
+			"path": "pages/shop/shop-ok/shop-ok",
+			"style": {
+				"navigationBarTitleText": "报名成功",
+				/* "navigationBarBackgroundColor": "#E41F19", */
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
 		// 报名详情
 		{
 			"path": "pages/shop/order/order-info/order-info",
@@ -72,21 +82,7 @@
 				"navigationBarTitleText": "优惠券"
 			}
 		},
-		// 报名成功
-		{
-			"path": "pages/shop/shop-ok/shop-ok",
-			"style": {
-				"navigationBarTitleText": "报名成功",
-				/* "navigationBarBackgroundColor": "#E41F19", */
-				"navigationStyle": "custom",
-				"navigationBarTextStyle": "black",
-				"app-plus": {
-					"animationType": "slide-in-bottom",
-					"bounce": "none",
-					"popGesture": "none" //禁止手势返回
-				}
-			}
-		},
+
 
 		// 选择学员
 		{

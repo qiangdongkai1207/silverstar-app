@@ -179,6 +179,9 @@ var _default =
     // 打开首页
     openIndex: function openIndex() {
       this.openPages.openIndex();
+    },
+    openOrderList: function openOrderList() {
+      this.openPages.openOrderList();
     } } };exports.default = _default;
 
 /***/ }),

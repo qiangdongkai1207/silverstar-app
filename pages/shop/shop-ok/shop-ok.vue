@@ -13,7 +13,7 @@
 					<view class="theme-bordeer-bg" @tap="openIndex()">
 						返回首页
 					</view>
-					<view class="theme-bg theme-bg-shadow">
+					<view class="theme-bg theme-bg-shadow" @tap="openOrderList()">
 						查看报名列表
 					</view>
 				</view>
@@ -35,6 +35,9 @@
 			openIndex() {
 				this.openPages.openIndex();
 			},
+			openOrderList() {
+				this.openPages.openOrderList();
+			},
 		}
 	}
 </script>
@@ -49,6 +52,7 @@
 	.main {
 		background: #FFFFFF;
 		box-sizing: content-box;
+		padding-bottom: 500rpx;
 	}
 
 	page {
@@ -56,7 +60,7 @@
 	}
 
 	.YmContent {
-		padding-top: 150rpx;
+		padding-top: 50rpx;
 	}
 
 	.btn-div {
@@ -65,7 +69,7 @@
 		justify-content: center;
 		align-items: center;
 		margin-left: -30rpx;
-		margin-top: 50rpx;
+		padding-top: 50rpx;
 	}
 
 	.btn-div view {
