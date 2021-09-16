@@ -1,6 +1,5 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-
 		// 首頁
 		{
 			"path": "pages/system/index/index",
@@ -8,15 +7,6 @@
 				"enablePullDownRefresh": true,
 				"onReachBottomDistance": 50,
 				"navigationBarTitleText": "首页"
-			}
-		},
-		// 我的报名列表
-		{
-			"path": "pages/shop/order/order",
-			"style": {
-				"navigationBarTitleText": "我的报名列表",
-				"enablePullDownRefresh": true,
-				"onReachBottomDistance": 50
 			}
 		},
 		// 报名详情
@@ -28,6 +18,16 @@
 				"navigationBarBackgroundColor": "#fff"
 			}
 		},
+		// 我的报名列表
+		{
+			"path": "pages/shop/order/order",
+			"style": {
+				"navigationBarTitleText": "我的报名列表",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+
 		{
 			"path": "pages/shop/list/list",
 			"style": {

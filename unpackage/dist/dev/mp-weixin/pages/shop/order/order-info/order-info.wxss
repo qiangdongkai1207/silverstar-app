@@ -207,7 +207,7 @@
   line-height: 32rpx;
 }
 .tui-goods-attr.data-v-8a0fc8a4 {
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #888888;
   line-height: 32rpx;
   padding-top: 20rpx;
@@ -216,7 +216,7 @@
   text-overflow: ellipsis;
 }
 .tui-goods-attr view.data-v-8a0fc8a4 {
-  font-size: 24rpx;
+  font-size: 28rpx;
 }
 .tui-price-right.data-v-8a0fc8a4 {
   text-align: right;
@@ -313,6 +313,7 @@
   background: #fff;
   font-size: 24rpx;
   line-height: 30rpx;
+  padding-bottom: 150rpx;
 }
 .tui-order-flex.data-v-8a0fc8a4 {
   display: -webkit-box;
@@ -355,7 +356,7 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   padding-bottom: env(safe-area-inset-bottom);
   z-index: 999;
-  padding: 20rpx;
+  padding: 20rpx 20rpx 50rpx 20rpx;
   box-sizing: border-box;
 }
 .tui-tabbar view.data-v-8a0fc8a4 {
@@ -406,5 +407,9 @@
   display: -webkit-box;
   font-size: 34rpx;
   line-height: 32rpx;
+}
+.tui-map.data-v-8a0fc8a4 {
+  padding: 10rpx 10rpx;
+  background-color: #FFFFFF;
 }
 

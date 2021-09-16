@@ -10831,23 +10831,7 @@ function normalizeComponent (
 /* 30 */,
 /* 31 */,
 /* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */
+/* 33 */
 /*!************************************************************************************!*\
   !*** E:/工作/自己的项目/报名系统/app/silverstar-app/silverstar-app/components/map/openMap.js ***!
   \************************************************************************************/
@@ -10855,7 +10839,7 @@ function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _transformCoordinate = _interopRequireDefault(__webpack_require__(/*! ./transformCoordinate.js */ 50));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _transformCoordinate = _interopRequireDefault(__webpack_require__(/*! ./transformCoordinate.js */ 34));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 function openMapByDefault(latitude, longitude, name) {
   uni.openLocation({
     latitude: latitude,
@@ -10953,7 +10937,7 @@ function getCoordByType(longitude, latitude, coord_type) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 50 */
+/* 34 */
 /*!************************************************************************************************!*\
   !*** E:/工作/自己的项目/报名系统/app/silverstar-app/silverstar-app/components/map/transformCoordinate.js ***!
   \************************************************************************************************/

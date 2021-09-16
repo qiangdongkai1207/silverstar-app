@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<view class="tui-order-header" class="theme-bg">
+		<view class="tui-order-header theme-bg">
 			<!-- <image :src="webURL+'img_detail_bg.png'" mode="widthFix" class="tui-img-bg"></image> -->
 			<view class="tui-header-content">
 				<view>
@@ -12,7 +12,7 @@
 				</view>
 			</view>
 		</view>
-		<view style="">
+		<view class="tui-map">
 			<tui-list-cell :arrow="true" bgcolor="#fefefe" @tap="openMap">
 				<view class="tui-flex-box">
 					<i class="iconfont icon-dingwei theme-color" style=" font-size: 46rpx;"></i>
@@ -30,7 +30,7 @@
 				</view>
 			</tui-list-cell>
 			<block>
-				<tui-list-cell padding="0" @click="onShopBuy(2)">
+				<tui-list-cell padding="0" @click="openShopInfo()">
 					<view class="tui-goods-item">
 						<view class="tui-goods-img tui-goods-chart">
 							<view>声乐</view>
@@ -120,12 +120,12 @@
 		<view class="tui-tabbar tui-order-btn">
 			<view>
 				<view class="tui-btn-mr">
-					<tui-button type="black" :plain="true" width="148rpx" height="56rpx" :size="28" shape="circle"
+					<tui-button type="black" :plain="true" width="148rpx" height="56rpx" :size="32" shape="circle"
 						@click="onShopBuy(3)">删除订单</tui-button>
 				</view>
 				<view class="tui-btn-mr">
-					<tui-button type="danger" :plain="true" width="148rpx" height="56rpx" :size="28" shape="circle"
-						@click="onShopBuy(2)">再次购买</tui-button>
+					<tui-button type="danger" :plain="true" width="148rpx" height="56rpx" :size="32" shape="circle"
+						@click="openShopInfo()">再次报名</tui-button>
 				</view>
 			</view>
 		</view>
@@ -158,6 +158,9 @@
 				//Map.openMap(39.9078008469, 116.391290596, this.shopBuy.cd_name, 'wgs84')
 				Map.openMap(parseFloat(34.73372), parseFloat(113.656577), '永安街校区',
 					'wgs84')
+			},
+			openShopInfo() {
+				this.openPages.openShopInfo();
 			},
 		}
 	}
@@ -322,7 +325,7 @@
 	}
 
 	.tui-goods-attr {
-		font-size: $font-sm;
+		font-size: $font-base;
 		color: #888888;
 		line-height: 32rpx;
 		padding-top: 20rpx;
@@ -331,7 +334,7 @@
 		text-overflow: ellipsis;
 
 		view {
-			font-size: $font-sm;
+			font-size: $font-base;
 		}
 
 		// padding-left: 10rpx;
@@ -434,6 +437,7 @@
 		background: #fff;
 		font-size: 24rpx;
 		line-height: 30rpx;
+		padding-bottom: 150rpx;
 	}
 
 	.tui-order-flex {
@@ -473,7 +477,7 @@
 		box-shadow: 0 0 1px rgba(0, 0, 0, .3);
 		padding-bottom: env(safe-area-inset-bottom);
 		z-index: 999;
-		padding: 20rpx;
+		padding: 20rpx 20rpx 50rpx 20rpx;
 		box-sizing: border-box;
 
 	}
@@ -520,5 +524,10 @@
 		display: -webkit-box;
 		font-size: $font-bg;
 		line-height: 32rpx;
+	}
+
+	.tui-map {
+		padding: 10rpx 10rpx;
+		background-color: #FFFFFF;
 	}
 </style>

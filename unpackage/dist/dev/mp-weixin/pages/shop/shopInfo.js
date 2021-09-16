@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var coupon = function coupon() {__webpack_require__.e(/*! require.ensure | components/coolc-coupon/coolc-coupon */ "components/coolc-coupon/coolc-coupon").then((function () {return resolve(__webpack_require__(/*! @/components/coolc-coupon/coolc-coupon */ 188));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tuiIcon = function tuiIcon() {__webpack_require__.e(/*! require.ensure | components/icon/icon */ "components/icon/icon").then((function () {return resolve(__webpack_require__(/*! @/components/icon/icon */ 174));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var coupon = function coupon() {__webpack_require__.e(/*! require.ensure | components/coolc-coupon/coolc-coupon */ "components/coolc-coupon/coolc-coupon").then((function () {return resolve(__webpack_require__(/*! @/components/coolc-coupon/coolc-coupon */ 188));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tuiIcon = function tuiIcon() {__webpack_require__.e(/*! require.ensure | components/icon/icon */ "components/icon/icon").then((function () {return resolve(__webpack_require__(/*! @/components/icon/icon */ 141));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
