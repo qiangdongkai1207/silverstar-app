@@ -186,7 +186,8 @@
 				this.openPages.openIndexCategory();
 			},
 			clickSearchbox() {
-				this.tui.alert("查询");
+				// this.tui.alert("查询");
+				this.openPages.openSeach();
 			}
 		}
 	}

@@ -9,6 +9,24 @@
 				"navigationBarTitleText": "首页"
 			}
 		},
+		// 用户信息
+		{
+			"path": "pages/user/user-info/user-info",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+
+		{
+			"path": "pages/shop/list/list",
+			"style": {
+				"navigationBarTitleText": "报名列表",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+
+
 		{
 			"path": "pages/shop/shopInfo",
 			"style": {
@@ -16,7 +34,15 @@
 			}
 		},
 
-
+		{
+			"path": "pages/util/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"app-plus": {
+					"softinputNavBar": "none"
+				}
+			}
+		},
 
 		// 我的订单
 		{
@@ -84,7 +110,9 @@
 			"style": {
 				"enablePullDownRefresh": true,
 				"onReachBottomDistance": 50,
-				"navigationBarTitleText": ""
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
 			}
 		},
 		// 登录

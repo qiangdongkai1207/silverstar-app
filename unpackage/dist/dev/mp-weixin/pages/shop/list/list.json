@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "报名列表",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "t-linkage": "/components/views/t-linkage/t-linkage",
+    "scroll-message": "/components/views/scroll-message/scroll-message"
+  }
+}

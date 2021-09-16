@@ -1,0 +1,1 @@
+<view class="data-v-90cd384a"><m-search vue-id="3b93988b-1" keywordList="{{keywordList}}" data-event-opts="{{[['^searchInputChange',[['searchInputChange']]],['^onSearchClick',[['onSearchClick']]]]}}" bind:searchInputChange="__e" bind:onSearchClick="__e" class="data-v-90cd384a" bind:__l="__l"></m-search></view>

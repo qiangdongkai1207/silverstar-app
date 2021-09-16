@@ -71,9 +71,27 @@ const openPages = {
 		});
 	},
 	// 跳转优惠券
-	openCoupon(param) {
+	openCoupon() {
 		uni.navigateTo({
 			url: '/pages/shop/coupon/coupon'
+		});
+	},
+	// 跳转搜索
+	openSeach() {
+		uni.navigateTo({
+			url: '/pages/util/search/search'
+		});
+	},
+	// 跳转商品列表
+	openShopList() {
+		uni.navigateTo({
+			url: '/pages/shop/list/list'
+		});
+	},
+	// 跳转个人信息
+	openUserInfo() {
+		uni.navigateTo({
+			url: '/pages/user/user-info/user-info'
 		});
 	},
 }

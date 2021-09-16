@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/system/index/index",
+    "pages/user/user-info/user-info",
+    "pages/shop/list/list",
     "pages/shop/shopInfo",
+    "pages/util/search/search",
     "pages/shop/order/order",
     "pages/shop/coupon/coupon",
     "pages/shop/shop-ok/shop-ok",

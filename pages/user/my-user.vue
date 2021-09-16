@@ -9,8 +9,8 @@
 				<!-- <image class="tui-avatar" src="/static/images/my/my_touxiang.png" @tap="touxiang"></image> -->
 				<image class="tui-avatar"
 					:src="'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ5bjdXwTibWW8UwWveSTBPib0ic2NeNurXyKnKu8eZ2a7rtKm2e2qPibVa2J329n1ic8eib8ue4I3R20sQ/132'"
-					@tap="touxiang"></image>
-				<view class="tui-info" v-show="isLogin" @tap="waitCode">
+					@tap="openUserInfo()"></image>
+				<view class="tui-info" v-show="isLogin" @tap="openUserInfo()">
 					<view class="tui-nickname">
 						强冬凯
 						<image class="tui-img-vip" src="/static/image/user/vip1.png"></image>
@@ -166,6 +166,9 @@
 			},
 			openCoupon() {
 				this.openPages.openCoupon();
+			},
+			openUserInfo() {
+				this.openPages.openUserInfo();
 			},
 		}
 	}

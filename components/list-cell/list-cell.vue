@@ -121,5 +121,6 @@
 		top: 50%;
 		margin-top: -7px;
 		right: 30rpx;
+		z-index: 1;
 	}
 </style>
