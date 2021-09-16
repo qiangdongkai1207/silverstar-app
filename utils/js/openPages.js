@@ -94,6 +94,18 @@ const openPages = {
 			url: '/pages/user/user-info/user-info'
 		});
 	},
+	// 跳转商品详情
+	openOrderList() {
+		uni.navigateTo({
+			url: '/pages/shop/order/order'
+		});
+	},
+	// 跳转商品详情
+	openOrderInfo() {
+		uni.navigateTo({
+			url: '/pages/shop/order/order-info/order-info'
+		});
+	},
 }
 
 export default openPages

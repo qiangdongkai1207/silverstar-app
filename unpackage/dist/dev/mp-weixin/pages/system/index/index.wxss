@@ -70,7 +70,7 @@
 }
 .tui-searchbox .tui-search-check.data-v-6e1c11a4 {
   font-size: 26rpx;
-  margin-top: 10rpx;
+  margin-top: 15rpx;
   padding-left: 10rpx;
   color: #727281;
 }

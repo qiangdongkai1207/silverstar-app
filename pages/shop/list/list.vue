@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<view class="tui-searchbox">
+		<view class="tui-searchbox" :style="{'position':[pageScrollTop?'fixed':'relative']}">
 			<view class="tui-searchbox-top">
 				<!-- <i class="iconfont icon-qiehuan" @tap="clickIndexCategory()"></i> -->
 				<view class="tui-search-input true" @tap="clickSearchbox()">
@@ -12,7 +12,9 @@
 				当前校区：永安街[点击切换]
 			</view>
 		</view>
-		<view class="class-box-block">
+		
+		<view class="class-box-block" :style="{'marginTop':[pageScrollTop?'130rpx':'0']}">
+			
 			<view class="public-card" hover-class="card-hover" @tap="clickCard()">
 				<view class="card-tip-top theme-bg">
 					火热报名
@@ -88,6 +90,107 @@
 					点击了解详情
 				</view>
 			</view>
+			
+			<view class="public-card" hover-class="card-hover" @tap="clickCard()">
+				<view class="card-tip-top theme-bg">
+					火热报名
+				</view>
+				<view class="card-img" v-if="false">
+					<image src="/static/image/index/bg1.jpg"></image>
+				</view>
+				<view class="card-text">
+					<view class="top">舞蹈课</view>
+					<view><label>报名时间：</label>
+						<text class="text-indent">2021年9月9日 - 2021年10月9日</text>
+					</view>
+					<view><label>上课时间：</label>
+						<text class="text-indent">周一 18：00 - 21：00</text>
+						<text class="text-indent">周六 9：00 - 12：00</text>
+					</view>
+					<view><label>要求：</label>
+						<text class="text-indent">适合18岁以下的儿童</text>
+					</view>
+				</view>
+				<view class="card-tip-bottom">
+					点击了解详情
+				</view>
+			</view>
+			
+			<view class="public-card" hover-class="card-hover" @tap="clickCard()">
+				<view class="card-tip-top theme-bg">
+					火热报名
+				</view>
+				<view class="card-img" v-if="false">
+					<image src="/static/image/index/bg1.jpg"></image>
+				</view>
+				<view class="card-text">
+					<view class="top">舞蹈课</view>
+					<view><label>报名时间：</label>
+						<text class="text-indent">2021年9月9日 - 2021年10月9日</text>
+					</view>
+					<view><label>上课时间：</label>
+						<text class="text-indent">周一 18：00 - 21：00</text>
+						<text class="text-indent">周六 9：00 - 12：00</text>
+					</view>
+					<view><label>要求：</label>
+						<text class="text-indent">适合18岁以下的儿童</text>
+					</view>
+				</view>
+				<view class="card-tip-bottom">
+					点击了解详情
+				</view>
+			</view>
+			
+			<view class="public-card" hover-class="card-hover" @tap="clickCard()">
+				<view class="card-tip-top theme-bg">
+					火热报名
+				</view>
+				<view class="card-img" v-if="false">
+					<image src="/static/image/index/bg1.jpg"></image>
+				</view>
+				<view class="card-text">
+					<view class="top">舞蹈课</view>
+					<view><label>报名时间：</label>
+						<text class="text-indent">2021年9月9日 - 2021年10月9日</text>
+					</view>
+					<view><label>上课时间：</label>
+						<text class="text-indent">周一 18：00 - 21：00</text>
+						<text class="text-indent">周六 9：00 - 12：00</text>
+					</view>
+					<view><label>要求：</label>
+						<text class="text-indent">适合18岁以下的儿童</text>
+					</view>
+				</view>
+				<view class="card-tip-bottom">
+					点击了解详情
+				</view>
+			</view>
+			
+			<view class="public-card" hover-class="card-hover" @tap="clickCard()">
+				<view class="card-tip-top theme-bg">
+					火热报名
+				</view>
+				<view class="card-img" v-if="false">
+					<image src="/static/image/index/bg1.jpg"></image>
+				</view>
+				<view class="card-text">
+					<view class="top">舞蹈课</view>
+					<view><label>报名时间：</label>
+						<text class="text-indent">2021年9月9日 - 2021年10月9日</text>
+					</view>
+					<view><label>上课时间：</label>
+						<text class="text-indent">周一 18：00 - 21：00</text>
+						<text class="text-indent">周六 9：00 - 12：00</text>
+					</view>
+					<view><label>要求：</label>
+						<text class="text-indent">适合18岁以下的儿童</text>
+					</view>
+				</view>
+				<view class="card-tip-bottom">
+					点击了解详情
+				</view>
+			</view>
+			
 		</view>
 
 	</view>
@@ -103,6 +206,7 @@
 		},
 		data() {
 			return {
+				pageScrollTop: false, // 判断页面是否滚动
 				userInfo: null, // 用户信息
 
 				tabbar: [
@@ -214,8 +318,17 @@
 			clickSearchbox() {
 				// this.tui.alert("查询");
 				this.openPages.openSeach();
+			},
+			// 页面下拉时的触发事件
+			onPageScroll(e) {
+				if (e.scrollTop <= 0) {
+					this.pageScrollTop = false;
+				} else {
+					this.pageScrollTop = true;
+				}
 			}
 		},
+
 	}
 </script>
 
@@ -430,8 +543,8 @@
 
 	/* 本页面特有 */
 	.class-box-block {
-		margin-top: 100rpx;
-		padding: 30rpx;
+		margin-top: 130rpx;
+		padding: 0 30rpx 30rpx 30rpx;
 	}
 
 	.tui-search-input.true {

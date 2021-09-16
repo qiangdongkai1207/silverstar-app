@@ -233,8 +233,8 @@
 }
 /* 本页面特有 */
 .class-box-block.data-v-8851a562 {
-  margin-top: 100rpx;
-  padding: 30rpx;
+  margin-top: 130rpx;
+  padding: 0 30rpx 30rpx 30rpx;
 }
 .tui-search-input.true.data-v-8851a562 {
   -webkit-box-pack: left;

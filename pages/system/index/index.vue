@@ -232,7 +232,7 @@
 
 		.tui-search-check {
 			font-size: $font-base-sm;
-			margin-top: 10rpx;
+			margin-top: 15rpx;
 			padding-left: 10rpx;
 			color: $font-color-auto;
 		}

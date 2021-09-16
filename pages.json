@@ -1,5 +1,6 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
 		// 首頁
 		{
 			"path": "pages/system/index/index",
@@ -7,6 +8,32 @@
 				"enablePullDownRefresh": true,
 				"onReachBottomDistance": 50,
 				"navigationBarTitleText": "首页"
+			}
+		},
+		// 我的报名列表
+		{
+			"path": "pages/shop/order/order",
+			"style": {
+				"navigationBarTitleText": "我的报名列表",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+		// 报名详情
+		{
+			"path": "pages/shop/order/order-info/order-info",
+			"style": {
+				"navigationBarTitleText": "报名详情",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/shop/list/list",
+			"style": {
+				"navigationBarTitleText": "报名列表",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
 			}
 		},
 		// 用户信息
@@ -17,16 +44,9 @@
 			}
 		},
 
-		{
-			"path": "pages/shop/list/list",
-			"style": {
-				"navigationBarTitleText": "报名列表",
-				"enablePullDownRefresh": true,
-				"onReachBottomDistance": 50
-			}
-		},
 
 
+		// 商品详情
 		{
 			"path": "pages/shop/shopInfo",
 			"style": {
@@ -44,13 +64,6 @@
 			}
 		},
 
-		// 我的订单
-		{
-			"path": "pages/shop/order/order",
-			"style": {
-				"navigationBarTitleText": "我的报名列表"
-			}
-		},
 
 		// 优惠券
 		{
@@ -100,8 +113,6 @@
 				"navigationBarTitleText": "编辑信息"
 			}
 		},
-
-		// 商品详情
 
 
 		// 我的

@@ -41,7 +41,8 @@
 			</view>
 		</view>
 		<view class="middle-container public-card">
-			<view @tap="waitCode" data-index="1" class="middle-item" hover-class="card-hover" :hover-stay-time="150">
+			<view @tap="openOrderList()" data-index="1" class="middle-item" hover-class="card-hover"
+				:hover-stay-time="150">
 				<image class="ticket-img" src="/static/image/user/sign-up.png"></image>
 				<text class="middle-tag">我的报名</text>
 			</view>
@@ -169,6 +170,9 @@
 			},
 			openUserInfo() {
 				this.openPages.openUserInfo();
+			},
+			openOrderList() {
+				this.openPages.openOrderList();
 			},
 		}
 	}
